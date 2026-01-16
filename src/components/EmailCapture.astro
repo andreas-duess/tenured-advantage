@@ -1,0 +1,219 @@
+---
+interface Props {
+  headline?: string;
+  description?: string;
+  inline?: boolean;
+}
+
+const {
+  headline = "Get Weekly AI Insights",
+  description = "Join experienced professionals using AI to amplify their advantage. Practical strategies, no hype.",
+  inline = false
+} = Astro.props;
+---
+
+<div class={`email-capture ${inline ? 'inline' : 'standalone'}`}>
+  <div class="capture-content">
+    <h3>{headline}</h3>
+    <p>{description}</p>
+  </div>
+
+  <form class="capture-form" action="/api/subscribe" method="POST">
+    <div class="form-group">
+      <input
+        type="email"
+        name="email"
+        placeholder="your@email.com"
+        required
+        aria-label="Email address"
+      />
+      <button type="submit">Subscribe</button>
+    </div>
+    <p class="privacy-note">
+      No spam. Unsubscribe anytime. Read our <a href="/privacy">privacy policy</a>.
+    </p>
+  </form>
+</div>
+
+<style>
+  .email-capture {
+    background: linear-gradient(135deg, #4b5563 0%, #1f2937 100%);
+    color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+
+  .email-capture.inline {
+    background: #f9fafb;
+    color: #1a1a1a;
+    border: 2px solid #e5e7eb;
+  }
+
+  .capture-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .capture-content p {
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+  }
+
+  .inline .capture-content h3,
+  .inline .capture-content p {
+    color: #1a1a1a;
+  }
+
+  .form-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  input[type="email"] {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    transition: all 0.2s;
+  }
+
+  .inline input[type="email"] {
+    background: #ffffff;
+    border-color: #d1d5db;
+    color: #1a1a1a;
+  }
+
+  input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .inline input[type="email"]::placeholder {
+    color: #9ca3af;
+  }
+
+  input[type="email"]:focus {
+    outline: none;
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .inline input[type="email"]:focus {
+    border-color: #1f2937;
+    background: #ffffff;
+  }
+
+  button {
+    padding: 0.875rem 2rem;
+    background: #f97316;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  button:hover {
+    background: #ea580c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
+  }
+
+  .inline button {
+    background: #f97316;
+    color: #ffffff;
+  }
+
+  .inline button:hover {
+    background: #ea580c;
+  }
+
+  .privacy-note {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-bottom: 0;
+  }
+
+  .privacy-note a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .inline .privacy-note {
+    color: #6b7280;
+  }
+
+  @media (max-width: 640px) {
+    .email-capture {
+      padding: 1.5rem;
+    }
+
+    .form-group {
+      flex-direction: column;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  // Handle form submission
+  document.querySelectorAll('.capture-form').forEach(form => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formElement = e.target as HTMLFormElement;
+      const formData = new FormData(formElement);
+      const email = formData.get('email') as string;
+      const button = formElement.querySelector('button') as HTMLButtonElement;
+      const originalText = button.textContent;
+
+      try {
+        button.textContent = 'Subscribing...';
+        button.disabled = true;
+
+        // For now, just log it. You'll replace this with your actual API endpoint
+        console.log('Subscribing email:', email);
+
+        // Simulate API call
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        button.textContent = '✓ Subscribed!';
+        formElement.querySelector('input')?.setAttribute('disabled', 'true');
+
+        // Store in localStorage to prevent re-subscription
+        localStorage.setItem('subscribed', 'true');
+
+      } catch (error) {
+        console.error('Subscription error:', error);
+        button.textContent = 'Error - Try Again';
+        button.disabled = false;
+
+        setTimeout(() => {
+          button.textContent = originalText;
+        }, 3000);
+      }
+    });
+  });
+
+  // Check if already subscribed
+  if (localStorage.getItem('subscribed') === 'true') {
+    document.querySelectorAll('.capture-form').forEach(form => {
+      const button = form.querySelector('button') as HTMLButtonElement;
+      const input = form.querySelector('input') as HTMLInputElement;
+      button.textContent = '✓ Already Subscribed';
+      button.disabled = true;
+      input.disabled = true;
+    });
+  }
+</script>

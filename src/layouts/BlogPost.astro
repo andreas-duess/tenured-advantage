@@ -1,0 +1,240 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import EmailCapture from '../components/EmailCapture.astro';
+import { formatDate } from '../utils/date';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  heroImage?: string;
+  author?: string;
+  tags?: string[];
+}
+
+const { title, description, pubDate, updatedDate, heroImage, author = 'Andreas Duess', tags = [] } = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={heroImage}
+  article={true}
+  pubDate={pubDate}
+  updatedDate={updatedDate}
+>
+  <Header />
+
+  <main class="article-container">
+    <article class="blog-post">
+      {heroImage && (
+        <img src={heroImage} alt={title} class="hero-image" />
+      )}
+
+      <header class="article-header">
+        <h1>{title}</h1>
+        <div class="article-meta">
+          <time datetime={pubDate.toISOString()}>
+            {formatDate(pubDate)}
+          </time>
+          {updatedDate && (
+            <span class="updated">
+              (Updated: {formatDate(updatedDate)})
+            </span>
+          )}
+          <span class="author">by {author}</span>
+        </div>
+        {tags.length > 0 && (
+          <div class="tags">
+            {tags.map(tag => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        )}
+      </header>
+
+      <!-- Email Capture - Top of Article -->
+      <EmailCapture />
+
+      <div class="article-content">
+        <slot />
+      </div>
+
+      <!-- Email Capture - Bottom of Article -->
+      <div class="bottom-cta">
+        <EmailCapture
+          headline="Get AI Insights for Experienced Professionals"
+          description="Join other professionals leveraging decades of experience with AI. Practical insights, no hype."
+        />
+      </div>
+    </article>
+
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <h3>About Andreas</h3>
+        <p>
+          Andreas Duess helps experienced professionals leverage AI to amplify their competitive advantage.
+          With 30+ years bridging tech and traditional industries, he's the CEO of 6 Seeds and teaches AI strategy at Ivey Business School.
+        </p>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>Popular Topics</h3>
+        <ul>
+          <li><a href="/blog/tag/ai-strategy">AI Strategy</a></li>
+          <li><a href="/blog/tag/career-longevity">Career Longevity</a></li>
+          <li><a href="/blog/tag/experience-advantage">Experience Advantage</a></li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .article-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+  }
+
+  .blog-post {
+    max-width: 65ch;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .article-header {
+    margin-bottom: 3rem;
+  }
+
+  .article-header h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .article-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .updated {
+    color: #9ca3af;
+    font-style: italic;
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .tag {
+    background: #f3f4f6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #4b5563;
+  }
+
+  .article-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .article-content :global(h2) {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .bottom-cta {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid #e5e7eb;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 6rem;
+    height: fit-content;
+  }
+
+  .sidebar-widget {
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .sidebar-widget h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+
+  .sidebar-widget p {
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin-bottom: 0;
+  }
+
+  .sidebar-widget ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar-widget li {
+    margin-bottom: 0.5rem;
+  }
+
+  .sidebar-widget a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 1024px) {
+    .article-container {
+      grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+      position: static;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .article-container {
+      padding: 2rem 1rem;
+    }
+
+    .article-header h1 {
+      font-size: 2rem;
+    }
+
+    .sidebar {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

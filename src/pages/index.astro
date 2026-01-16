@@ -1,0 +1,345 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import EmailCapture from '../components/EmailCapture.astro';
+import { getCollection } from 'astro:content';
+import { formatDate } from '../utils/date';
+
+const posts = (await getCollection('blog'))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title="Tenured Advantage"
+  description="AI insights for experienced professionals who want to amplify their competitive edge. Practical strategies, no hype."
+>
+  <Header />
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>AI for Experienced Professionals</h1>
+        <p class="hero-subtitle">
+          You've spent decades building expertise. Now amplify it with AI—without starting over.
+        </p>
+        <div class="hero-cta">
+          <EmailCapture
+            headline="Get Weekly AI Insights"
+            description="Join experienced professionals using AI to amplify their advantage. Practical strategies, no hype."
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="value-props">
+      <div class="container">
+        <div class="prop-grid">
+          <div class="prop">
+            <h3>Experience is Your Edge</h3>
+            <p>
+              While others chase AI trends, you have decades of context that AI amplifies.
+              Learn to leverage what you already know.
+            </p>
+          </div>
+          <div class="prop">
+            <h3>Practical, Not Hype</h3>
+            <p>
+              No buzzwords. No theory. Just actionable strategies that work for professionals
+              who need results, not experiments.
+            </p>
+          </div>
+          <div class="prop">
+            <h3>Stay Ahead, Not Behind</h3>
+            <p>
+              Don't get replaced—become irreplaceable. AI is a tool for those who know
+              how to use it strategically.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {posts.length > 0 && (
+      <section class="latest-posts">
+        <div class="container">
+          <h2>Latest Insights</h2>
+          <div class="posts-grid">
+            {posts.map(post => (
+              <article class="post-card">
+                {post.data.heroImage && (
+                  <img src={post.data.heroImage} alt={post.data.title} class="post-image" />
+                )}
+                <div class="post-content">
+                  <h3>
+                    <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+                  </h3>
+                  <p class="post-meta">
+                    <time datetime={post.data.pubDate.toISOString()}>
+                      {formatDate(post.data.pubDate)}
+                    </time>
+                  </p>
+                  <p>{post.data.description}</p>
+                  <a href={`/blog/${post.slug}`} class="read-more">Read more →</a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="about-preview">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2>About Andreas Duess</h2>
+            <p>
+              Andreas helps experienced professionals leverage AI to amplify their competitive advantage.
+              With 30+ years bridging tech and traditional industries, he's the CEO of 6 Seeds and teaches
+              AI strategy at Ivey Business School.
+            </p>
+            <p>
+              He's built and exited a successful marketing agency, advised governments on AI policy, and
+              keynoted at conferences worldwide. Now he's sharing what works—and what doesn't—when it
+              comes to AI for experienced professionals.
+            </p>
+            <a href="/about" class="btn-secondary">Learn more about Andreas →</a>
+          </div>
+          <div class="about-image">
+            <img src="/Andreas-Headshot.jpg" alt="Andreas Duess" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('/images/diverse_business_leaders.webp') center/cover no-repeat;
+    color: #ffffff;
+    padding: 6rem 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    opacity: 0.95;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .value-props {
+    padding: 5rem 0;
+    background: #f9fafb;
+  }
+
+  .prop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+  }
+
+  .prop h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+
+  .prop p {
+    color: #4b5563;
+    margin-bottom: 0;
+  }
+
+  .latest-posts {
+    padding: 5rem 0;
+  }
+
+  .latest-posts h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+    color: #1f2937;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .post-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .post-content {
+    padding: 1.5rem;
+  }
+
+  .post-content h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-content h3 a {
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+
+  .post-content h3 a:hover {
+    color: #2563eb;
+  }
+
+  .post-meta {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-content p {
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+
+  .read-more {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+
+  .about-preview {
+    padding: 5rem 0;
+    background: #f9fafb;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-content h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #1f2937;
+  }
+
+  .about-content p {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    background: #ffffff;
+    color: #667eea;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:hover {
+    background: #667eea;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  }
+
+  .about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 1024px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .about-image {
+      order: -1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 1rem;
+    }
+
+    .hero {
+      padding: 4rem 0;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+
+    .value-props,
+    .latest-posts,
+    .about-preview {
+      padding: 3rem 0;
+    }
+
+    .prop-grid,
+    .posts-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>
