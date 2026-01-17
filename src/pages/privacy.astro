@@ -1,0 +1,243 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Privacy Policy | Tenured Advantage"
+  description="Privacy policy for Tenured Advantage. Learn how we collect, use, and protect your personal information."
+>
+  <Header />
+
+  <main class="legal-page">
+    <div class="container">
+      <article class="legal-content">
+        <header class="page-header">
+          <h1>Privacy Policy</h1>
+          <p class="last-updated">Last Updated: January 16, 2026</p>
+        </header>
+
+        <section>
+          <h2>Introduction</h2>
+          <p>
+            Tenured Advantage ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website tenuredadvantage.com.
+          </p>
+        </section>
+
+        <section>
+          <h2>Information We Collect</h2>
+
+          <h3>Information You Provide</h3>
+          <p>
+            We may collect personal information that you voluntarily provide to us when you:
+          </p>
+          <ul>
+            <li>Subscribe to our email newsletter</li>
+            <li>Contact us via email</li>
+            <li>Register for events or webinars</li>
+            <li>Participate in surveys or feedback forms</li>
+          </ul>
+          <p>
+            This information may include your name, email address, and any other information you choose to provide.
+          </p>
+
+          <h3>Automatically Collected Information</h3>
+          <p>
+            When you visit our website, we automatically collect certain information about your device and browsing behavior, including:
+          </p>
+          <ul>
+            <li>IP address</li>
+            <li>Browser type and version</li>
+            <li>Pages you visit and time spent on pages</li>
+            <li>Referring website addresses</li>
+            <li>Device information</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How We Use Your Information</h2>
+          <p>
+            We use the information we collect to:
+          </p>
+          <ul>
+            <li>Send you our newsletter and updates (with your consent)</li>
+            <li>Respond to your inquiries and requests</li>
+            <li>Improve our website and content</li>
+            <li>Analyze website usage and trends</li>
+            <li>Comply with legal obligations</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Email Communications</h2>
+          <p>
+            If you subscribe to our email newsletter, we will send you periodic emails with AI insights, articles, and updates. You can unsubscribe at any time by clicking the "unsubscribe" link at the bottom of any email or by contacting us directly.
+          </p>
+        </section>
+
+        <section>
+          <h2>Cookies and Tracking Technologies</h2>
+          <p>
+            We use Google Analytics to analyze website traffic and improve user experience. Google Analytics uses cookies to collect anonymous information about how visitors use our site. You can opt out of Google Analytics by installing the Google Analytics Opt-out Browser Add-on.
+          </p>
+        </section>
+
+        <section>
+          <h2>Third-Party Services</h2>
+          <p>
+            We may use third-party services to help us operate our website and deliver our services, including:
+          </p>
+          <ul>
+            <li><strong>Email service providers</strong> for newsletter distribution</li>
+            <li><strong>Analytics services</strong> (Google Analytics) for website analysis</li>
+            <li><strong>Hosting services</strong> (Cloudflare Pages) for website hosting</li>
+          </ul>
+          <p>
+            These third parties have access to your information only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.
+          </p>
+        </section>
+
+        <section>
+          <h2>Data Security</h2>
+          <p>
+            We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.
+          </p>
+        </section>
+
+        <section>
+          <h2>Your Rights</h2>
+          <p>
+            Depending on your location, you may have certain rights regarding your personal information, including:
+          </p>
+          <ul>
+            <li>The right to access your personal information</li>
+            <li>The right to correct inaccurate information</li>
+            <li>The right to delete your information</li>
+            <li>The right to object to processing</li>
+            <li>The right to data portability</li>
+          </ul>
+          <p>
+            To exercise these rights, please contact us at andreas@experienceadvantage.com.
+          </p>
+        </section>
+
+        <section>
+          <h2>Children's Privacy</h2>
+          <p>
+            Our website is not intended for individuals under the age of 18. We do not knowingly collect personal information from children.
+          </p>
+        </section>
+
+        <section>
+          <h2>Changes to This Privacy Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically.
+          </p>
+        </section>
+
+        <section>
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
+          </p>
+          <p>
+            <strong>Email:</strong> <a href="mailto:andreas@experienceadvantage.com">andreas@experienceadvantage.com</a>
+          </p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .legal-page {
+    padding: 3rem 0;
+    min-height: 70vh;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .page-header h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .last-updated {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+
+  .legal-content section {
+    margin-bottom: 3rem;
+  }
+
+  .legal-content h2 {
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+  }
+
+  .legal-content h3 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: #1f2937;
+  }
+
+  .legal-content p {
+    color: #4b5563;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .legal-content ul {
+    color: #4b5563;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+  }
+
+  .legal-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  .legal-content a {
+    color: #3e4956;
+    text-decoration: none;
+  }
+
+  .legal-content a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 1rem;
+    }
+
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .legal-content h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
