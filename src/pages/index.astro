@@ -20,7 +20,9 @@ const posts = (await getCollection('blog'))
 
   <main>
     <section class="hero">
-      <div class="container">
+      <div class="hero-parallax-bg" data-parallax-bg></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
         <h1>AI for Experienced Professionals</h1>
         <p class="hero-subtitle">
           You've spent decades building expertise. Now amplify it with AI—without starting over.
@@ -127,12 +129,39 @@ const posts = (await getCollection('blog'))
   }
 
   .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('/images/diverse_business_leaders.webp') center/cover no-repeat;
     color: #ffffff;
     padding: 6rem 0;
     text-align: center;
     position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-parallax-bg {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    background: url('/images/diverse_business_leaders.webp') center/cover no-repeat;
+    will-change: transform;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
   }
 
   .hero h1 {
@@ -320,6 +349,7 @@ const posts = (await getCollection('blog'))
 
     .hero {
       padding: 4rem 0;
+      min-height: 500px;
     }
 
     .hero h1 {
@@ -343,3 +373,36 @@ const posts = (await getCollection('blog'))
     }
   }
 </style>
+
+<script>
+  function initHeroParallax() {
+    const parallaxBg = document.querySelector('[data-parallax-bg]') as HTMLElement;
+    if (!parallaxBg) return;
+
+    function updateParallax() {
+      const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+      // Move background slower than scroll (0.5x speed)
+      parallaxBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateParallax();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    // Initial update
+    updateParallax();
+  }
+
+  // Run on page load
+  initHeroParallax();
+
+  // Re-run on view transitions (Astro feature)
+  document.addEventListener('astro:page-load', initHeroParallax);
+</script>
