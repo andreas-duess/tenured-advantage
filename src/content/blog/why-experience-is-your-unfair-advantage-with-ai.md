@@ -69,7 +69,3 @@ We're entering what I call the intelligence economy. Those who shape data into d
 Your experience isn't a liability—it's your unfair advantage.
 
 The question is: will you use it?
-
----
-
-**Ready to amplify your experience with AI?** Subscribe to get weekly insights on leveraging decades of expertise in the intelligence economy.

@@ -539,29 +539,6 @@ Want to build ChatGPT fluency? Use it for one different application each day:
 
 By day 7, you'll have a feel for what ChatGPT does well and where you still need to bring expertise.
 
-## Get 50 ChatGPT Prompts for Professionals
-
-I've created a prompt library with 50 copy-paste prompts for experienced professionals across:
-- Communication (emails, presentations, proposals)
-- Analysis (research, competitive intelligence, strategic planning)
-- Problem-solving (brainstorming, decision frameworks, risk assessment)
-- Career development (positioning, networking, interview prep)
-- Learning (skill development, knowledge acquisition, staying current)
-
-[Download the prompt library](#)
-
-## Join the Community
-
-2,000+ experienced professionals using AI daily to work smarter.
-
-We share:
-- What's working right now
-- Prompts that get results
-- Real applications across industries
-- Lessons learned
-
-[Join the community](#)
-
 ## The Truth About Daily AI Use
 
 The difference between "I've heard of ChatGPT" and "ChatGPT is part of how I work" is practice.

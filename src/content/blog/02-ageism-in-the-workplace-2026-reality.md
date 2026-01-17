@@ -328,9 +328,3 @@ They don't compete on the same terms as 30-year-olds. They compete on different 
 Ageism is a market signal. It tells you where not to play.
 
 Listen to it. Then go where you're valued.
-
----
-
-**Want to turn experience into competitive advantage?** Join professionals over 50 who are leveraging AI to amplify their expertise and build careers on their own terms.
-
-[Get the Experience Advantage newsletter →]

@@ -1,0 +1,105 @@
+---
+interface Props {
+  author?: string;
+}
+
+const { author = 'Andreas Duess' } = Astro.props;
+---
+
+<div class="author-bio">
+  <img src="/Andreas-Headshot.jpg" alt={author} class="author-image" />
+  <div class="author-content">
+    <div class="author-header">
+      <h3>About {author}</h3>
+      <span class="author-title">CEO, Speaker, Educator</span>
+    </div>
+    <p class="author-description">
+      Andreas helps experienced professionals leverage AI to amplify their competitive advantage.
+      With 30+ years bridging tech and traditional industries, he's the CEO of 6 Seeds, teaches
+      AI strategy at Ivey Business School, and has successfully built and exited a marketing agency.
+      He keynotes at conferences worldwide and advises governments on AI policy.
+    </p>
+    <a href="/about" class="author-link">Learn more about Andreas →</a>
+  </div>
+</div>
+
+<style>
+  .author-bio {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    margin: 3rem 0;
+    align-items: start;
+  }
+
+  .author-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid #667eea;
+  }
+
+  .author-content {
+    flex: 1;
+  }
+
+  .author-header {
+    margin-bottom: 0.75rem;
+  }
+
+  .author-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+  }
+
+  .author-title {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .author-description {
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .author-link {
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s;
+  }
+
+  .author-link:hover {
+    color: #5568d3;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .author-bio {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .author-image {
+      width: 100px;
+      height: 100px;
+    }
+
+    .author-header h3 {
+      font-size: 1.25rem;
+    }
+  }
+</style>

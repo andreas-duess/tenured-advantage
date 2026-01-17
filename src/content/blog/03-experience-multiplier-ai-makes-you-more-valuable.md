@@ -3,7 +3,7 @@ title: "The Experience Multiplier: Why AI Makes You More Valuable at 50 Than at 
 description: "AI doesn't replace experience—it amplifies it. Here's why the combination of deep expertise and AI tools creates exponential value that youth alone can't match."
 pubDate: 2026-01-24
 author: "Andreas Duess"
-heroImage: "/images/blog/experience-multiplier-hero.jpg"
+heroImage: "/images/executives-conversation.webp"
 tags: ["AI", "experience", "career advantage", "professional development"]
 draft: false
 ---
@@ -321,9 +321,3 @@ And judgment—earned through decades of pattern recognition, mistakes, successe
 That's your unfair advantage.
 
 Use it.
-
----
-
-**Ready to activate the Experience Multiplier?** Join professionals who are combining decades of expertise with AI leverage to create exponential value.
-
-[Get practical AI strategies for experienced professionals →]

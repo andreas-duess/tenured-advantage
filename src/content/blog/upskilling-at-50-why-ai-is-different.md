@@ -247,23 +247,6 @@ The barrier isn't age. It's not difficulty. It's not time.
 
 The barrier is starting.
 
-## Join 2,000+ Professionals Upskilling With AI
-
-You don't have to do this alone.
-
-Our community includes experienced professionals across industries who are building AI competence together.
-
-We share:
-- Portfolio project ideas
-- What's working in real applications
-- Prompts and frameworks
-- Success stories and lessons learned
-- Weekly practical strategies
-
-Free to join. Invaluable for learning.
-
-[Join the Community](#)
-
 ## The Uncomfortable Truth
 
 Every week you wait, the gap widens.

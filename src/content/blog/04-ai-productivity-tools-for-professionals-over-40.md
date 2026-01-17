@@ -3,7 +3,7 @@ title: "AI Productivity Tools Every Professional Over 40 Should Know"
 description: "Stop drowning in busy work. These AI tools handle research, writing, analysis, and coordination—freeing you to focus on strategic work only you can do."
 pubDate: 2026-01-26
 author: "Andreas Duess"
-heroImage: "/images/blog/ai-productivity-tools-hero.jpg"
+heroImage: "/images/business-man-aii-presentation.webp"
 tags: ["AI tools", "productivity", "AI for professionals", "work efficiency"]
 draft: false
 ---
@@ -267,9 +267,3 @@ The question isn't whether AI tools are worth learning. It's whether we can affo
 Because here's the reality: every hour you spend on busy work is an hour you're not spending on high-value work. AI gives you those hours back.
 
 What you do with them is up to you.
-
----
-
-**Want to master AI tools for your specific role?** Join experienced professionals learning practical AI strategies that create immediate impact.
-
-[Get the AI Quick-Start Guide for Professionals →]

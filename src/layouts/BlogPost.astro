@@ -3,7 +3,9 @@ import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import EmailCapture from '../components/EmailCapture.astro';
+import AuthorBio from '../components/AuthorBio.astro';
 import { formatDate } from '../utils/date';
+import { getCollection } from 'astro:content';
 
 interface Props {
   title: string;
@@ -16,6 +18,32 @@ interface Props {
 }
 
 const { title, description, pubDate, updatedDate, heroImage, author = 'Andreas Duess', tags = [] } = Astro.props;
+
+// Get related articles based on shared tags, with fallback to recent posts
+const allPosts = await getCollection('blog');
+const otherPosts = allPosts.filter(post => !post.data.draft && post.data.title !== title);
+
+// First, get posts with shared tags
+const postsWithSharedTags = otherPosts
+  .map(post => {
+    const sharedTags = post.data.tags?.filter(tag => tags.includes(tag)) || [];
+    return { post, sharedTagCount: sharedTags.length };
+  })
+  .filter(item => item.sharedTagCount > 0)
+  .sort((a, b) => b.sharedTagCount - a.sharedTagCount);
+
+// Get up to 2 posts with shared tags
+let relatedPosts = postsWithSharedTags.slice(0, 2).map(item => item.post);
+
+// If we don't have 2 posts yet, fill with recent posts
+if (relatedPosts.length < 2) {
+  const usedSlugs = new Set(relatedPosts.map(p => p.slug));
+  const recentPosts = otherPosts
+    .filter(post => !usedSlugs.has(post.slug))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 2 - relatedPosts.length);
+  relatedPosts = [...relatedPosts, ...recentPosts];
+}
 ---
 
 <BaseLayout
@@ -70,6 +98,29 @@ const { title, description, pubDate, updatedDate, heroImage, author = 'Andreas D
           description="Join other professionals leveraging decades of experience with AI. Practical insights, no hype."
         />
       </div>
+
+      <!-- Author Bio -->
+      <AuthorBio author={author} />
+
+      {relatedPosts.length > 0 && (
+        <div class="related-articles">
+          <h2>Related Articles</h2>
+          <div class="related-grid">
+            {relatedPosts.map(post => (
+              <a href={`/blog/${post.slug}/`} class="related-card">
+                {post.data.heroImage && (
+                  <img src={post.data.heroImage} alt={post.data.title} class="related-image" />
+                )}
+                <div class="related-content">
+                  <h3>{post.data.title}</h3>
+                  <p>{post.data.description}</p>
+                  <span class="read-more">Read article →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </article>
 
     <aside class="sidebar">
@@ -160,6 +211,27 @@ const { title, description, pubDate, updatedDate, heroImage, author = 'Andreas D
     line-height: 1.8;
   }
 
+  .article-content :global(pre) {
+    overflow-x: auto;
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    max-width: 100%;
+  }
+
+  .article-content :global(code) {
+    font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+    font-size: 0.9em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .article-content :global(pre code) {
+    white-space: pre;
+    word-wrap: normal;
+  }
+
   .article-content :global(h2) {
     margin-top: 3rem;
     padding-top: 1rem;
@@ -170,6 +242,69 @@ const { title, description, pubDate, updatedDate, heroImage, author = 'Andreas D
     margin-top: 4rem;
     padding-top: 3rem;
     border-top: 2px solid #e5e7eb;
+  }
+
+  .related-articles {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid #e5e7eb;
+  }
+
+  .related-articles h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .related-card {
+    display: block;
+    background: #f9fafb;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .related-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .related-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .related-content {
+    padding: 1.5rem;
+  }
+
+  .related-content h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+
+  .related-content p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .read-more {
+    color: #2563eb;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 
   .sidebar {
@@ -234,6 +369,10 @@ const { title, description, pubDate, updatedDate, heroImage, author = 'Andreas D
     }
 
     .sidebar {
+      grid-template-columns: 1fr;
+    }
+
+    .related-grid {
       grid-template-columns: 1fr;
     }
   }

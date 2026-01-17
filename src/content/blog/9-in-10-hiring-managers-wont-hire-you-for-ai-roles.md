@@ -222,30 +222,6 @@ We have two choices: Wait for the bias to change, or make it irrelevant by demon
 
 The first choice means waiting forever. The second means taking control.
 
-## Get the AI Portfolio Template
-
-I've created a template that shows you exactly how to structure portfolio projects that prove AI competence and neutralize age bias.
-
-It includes:
-- Project formats that highlight experience + AI
-- Case study templates
-- Before/after comparison frameworks
-- Outcome documentation guides
-
-[Download the AI Portfolio Template](#)
-
-## Join Professionals Proving the Bias Wrong
-
-You're not alone in this. Thousands of experienced professionals are building AI competence and proving hiring managers wrong.
-
-Join our community to:
-- Share portfolio projects and get feedback
-- Learn what's working in the job market right now
-- Connect with professionals who've successfully made the transition
-- Get weekly strategies for neutralizing age bias
-
-[Join the Community](#)
-
 ## The Final Word
 
 The bias is real. The data doesn't lie. Nine in 10 hiring managers will pass us over—unless we give them no choice but to hire us anyway.

@@ -254,17 +254,6 @@ You'll never feel fully ready. Start building portfolio projects now, even if th
 **Mistake 5: Giving up at day 60**
 Career transitions rarely happen exactly on schedule. If you're not employed by day 90, but you have genuine conversations happening, you're on track.
 
-## Your Downloadable Action Tracker
-
-I've created a detailed 90-day tracker with daily actions, weekly milestones, and progress checkpoints. It includes:
-- Daily task breakdowns
-- Portfolio project templates
-- LinkedIn optimization checklist
-- Interview preparation worksheets
-- Progress tracking
-
-[Download your 90-Day Career Transition Tracker](#)
-
 ## What Happens After 90 Days
 
 If you follow this plan consistently, here's what you'll have:
@@ -275,20 +264,6 @@ If you follow this plan consistently, here's what you'll have:
 - Confidence in your capability
 
 You might not have a signed offer on day 91. But you'll have momentum. And momentum compounds.
-
-## Join the Career Transition Community
-
-You don't have to do this alone. Join 2,000+ experienced professionals who are leveraging AI for career transitions.
-
-Every week, I share:
-- Portfolio project ideas
-- Positioning strategies
-- What's working in the market right now
-- Real transition stories from professionals just like you
-
-The community is free. The insights are invaluable.
-
-[Join the Career Transition Community](#)
 
 ## Your Next Step
 

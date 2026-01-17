@@ -470,29 +470,6 @@ Everyone's path is slightly different. Here's how to customize this 12-week plan
 - Build portfolio projects around content strategy
 - Emphasize AI for ideation and refinement
 
-## Get the 12-Week AI Learning Plan
-
-I've created a detailed learning tracker with:
-- Daily task breakdowns
-- Resource links
-- Portfolio project templates
-- Progress checkpoints
-- Prompt libraries
-
-[Download the 12-Week Learning Plan](#)
-
-## Join the AI Learning Community
-
-You don't have to learn alone. Join 2,000+ experienced professionals building AI competence together.
-
-Every week, we share:
-- Portfolio project ideas
-- Resource recommendations
-- Prompt templates that actually work
-- Success stories and lessons learned
-
-[Join the Learning Community](#)
-
 ## The Truth About Learning AI as a Professional
 
 We don't need a computer science degree. We don't need to go back to school. We don't need six months.
