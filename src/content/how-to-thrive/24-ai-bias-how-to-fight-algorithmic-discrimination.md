@@ -3,7 +3,7 @@ title: "AI Bias and You: How Experienced Professionals Can Fight Algorithmic Dis
 description: "I've spent 30 years watching bias hide behind 'objective' systems. Now AI is automating that bias at scale. But here's what tech companies don't understand: we're uniquely positioned to spot and fight algorithmic discrimination because we've lived through it."
 pubDate: 2026-01-24
 author: "Andreas Duess"
-heroImage: "/images/blog/ai-bias-hero.jpg"
+heroImage: "/images/wall-street.webp"
 tags: ["AI bias", "algorithmic bias", "AI fairness", "workplace discrimination"]
 draft: false
 ---

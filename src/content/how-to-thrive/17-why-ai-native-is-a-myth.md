@@ -3,7 +3,7 @@ title: "Why 'AI-Native' Is a Myth (And Experience Always Wins)"
 description: "The tech industry wants you to believe young 'AI-native' workers have an advantage. The data tells a different story. Here's why experience + AI beats youth + AI every time."
 pubDate: 2026-01-31
 author: "Andreas Duess"
-heroImage: "/images/executives-conversation.webp"
+heroImage: "/images/podcast.webp"
 altText: "Business executives in strategic conversation - experience and wisdom in action"
 tags: ["ai-native", "experience-advantage", "thought-leadership", "ageism"]
 draft: false

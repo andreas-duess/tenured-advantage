@@ -3,7 +3,7 @@ title: "How to Learn AI as a Professional (No Degree Required)"
 description: "Skip the computer science degree. This 12-week learning path shows professionals how to build AI competence that actually matters—without going back to school."
 pubDate: 2026-01-22
 author: "Andreas Duess"
-heroImage: "/images/executives-wall-street.webp"
+heroImage: "/images/one-to-one-meeting.webp"
 altText: "Business executives walking on Wall Street financial district"
 tags: ["ai-learning", "ai-skills", "professional-development"]
 draft: false

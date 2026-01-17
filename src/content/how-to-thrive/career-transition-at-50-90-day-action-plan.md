@@ -3,7 +3,7 @@ title: "Career Transition at 50: Your 90-Day Action Plan"
 description: "Ready to transition your career at 50? This 90-day action plan shows you how to leverage AI skills and decades of experience for successful career change."
 pubDate: 2026-01-20
 author: "Andreas Duess"
-heroImage: "/images/blog/career-transition-90-day-plan-hero.jpg"
+heroImage: "/images/sailing.webp"
 tags: ["career-transition", "career-change", "ai-skills"]
 draft: false
 ---

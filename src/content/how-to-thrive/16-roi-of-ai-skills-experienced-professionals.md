@@ -3,7 +3,7 @@ title: "The ROI of AI Skills for Experienced Professionals"
 description: "Detailed financial analysis: The return on investing 80 hours and $500 to build AI competence. Why the math works better at 50 than at 30."
 pubDate: 2026-01-30
 author: "Andreas Duess"
-heroImage: "/images/executives-wall-street.webp"
+heroImage: "/images/factory-walkthrough.webp"
 altText: "Business executives analyzing financial returns - ROI of professional development"
 tags: ["roi-analysis", "career-investment", "professional-development", "ai-skills"]
 draft: false
