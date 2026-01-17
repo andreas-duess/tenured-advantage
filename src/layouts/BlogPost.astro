@@ -31,9 +31,7 @@ const { title, description, pubDate, updatedDate, heroImage, author = 'Andreas D
   <main class="article-container">
     <article class="blog-post">
       {heroImage && (
-        <div class="hero-parallax-container">
-          <img src={heroImage} alt={title} class="hero-image" data-parallax />
-        </div>
+        <img src={heroImage} alt={title} class="hero-image" />
       )}
 
       <header class="article-header">
@@ -97,54 +95,6 @@ const { title, description, pubDate, updatedDate, heroImage, author = 'Andreas D
   <Footer />
 </BaseLayout>
 
-<script>
-  function initParallax() {
-    const parallaxImage = document.querySelector('[data-parallax]') as HTMLElement;
-    if (!parallaxImage) return;
-
-    const container = parallaxImage.closest('.hero-parallax-container') as HTMLElement;
-    if (!container) return;
-
-    function updateParallax() {
-      const rect = container.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      // Only apply parallax when container is in viewport
-      if (rect.top < windowHeight && rect.bottom > 0) {
-        // Calculate how far the container has moved through the viewport
-        // When top of container is at bottom of viewport: progress = 0
-        // When bottom of container is at top of viewport: progress = 1
-        const scrollProgress = (windowHeight - rect.top) / (windowHeight + rect.height);
-
-        // Move the image based on scroll progress
-        // Range: moves from -50px to +50px as you scroll
-        const movement = (scrollProgress - 0.5) * 100;
-        parallaxImage.style.transform = `translateY(${movement}px)`;
-      }
-    }
-
-    let ticking = false;
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          updateParallax();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    });
-
-    // Initial update
-    updateParallax();
-  }
-
-  // Run on page load
-  initParallax();
-
-  // Re-run on view transitions (Astro feature)
-  document.addEventListener('astro:page-load', initParallax);
-</script>
-
 <style>
   .article-container {
     max-width: 1200px;
@@ -159,35 +109,11 @@ const { title, description, pubDate, updatedDate, heroImage, author = 'Andreas D
     max-width: 65ch;
   }
 
-  .hero-parallax-container {
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-    position: relative;
-  }
-
   .hero-image {
     width: 100%;
-    height: 600px;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    will-change: transform;
-  }
-
-  @media (max-width: 768px) {
-    .hero-parallax-container {
-      height: 350px;
-    }
-
-    .hero-image {
-      height: 450px;
-    }
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 2rem;
   }
 
   .article-header {
