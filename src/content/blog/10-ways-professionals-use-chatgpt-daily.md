@@ -5,7 +5,7 @@ pubDate: 2026-01-24
 author: "Andreas Duess"
 heroImage: "/images/blog/chatgpt-daily-use-hero.jpg"
 tags: ["chatgpt", "ai-tools", "productivity"]
-draft: true
+draft: false
 ---
 
 Everyone talks about ChatGPT. Few people actually use it daily in ways that matter.

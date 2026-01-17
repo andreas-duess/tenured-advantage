@@ -5,7 +5,7 @@ pubDate: 2026-01-21
 author: "Andreas Duess"
 heroImage: "/images/blog/9-in-10-hiring-managers-hero.jpg"
 tags: ["ageism", "ai-careers", "hiring-bias"]
-draft: true
+draft: false
 ---
 
 Here's what keeps me up at night: Nine in 10 hiring managers admit they're more likely to consider candidates under 35 for AI-related roles.

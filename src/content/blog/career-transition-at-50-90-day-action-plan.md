@@ -5,7 +5,7 @@ pubDate: 2026-01-20
 author: "Andreas Duess"
 heroImage: "/images/blog/career-transition-90-day-plan-hero.jpg"
 tags: ["career-transition", "career-change", "ai-skills"]
-draft: true
+draft: false
 ---
 
 Three months from now, you could be in a completely different career position. Not because you've abandoned our expertise—but because you've amplified it with AI skills that make you invaluable.

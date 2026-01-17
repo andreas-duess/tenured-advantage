@@ -5,7 +5,7 @@ pubDate: 2026-01-22
 author: "Andreas Duess"
 heroImage: "/images/blog/learn-ai-professional-hero.jpg"
 tags: ["ai-learning", "ai-skills", "professional-development"]
-draft: true
+draft: false
 ---
 
 Every AI learning path I've seen assumes you either have a computer science degree or want one.

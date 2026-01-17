@@ -5,7 +5,7 @@ pubDate: 2026-01-25
 author: "Andreas Duess"
 heroImage: "/images/blog/ai-skills-gap-opportunity-hero.jpg"
 tags: ["ai-skills", "career-opportunity", "skills-gap"]
-draft: true
+draft: false
 ---
 
 Companies are desperate for AI talent. The skills gap is real, growing, and creating unprecedented opportunities for professionals who move now.

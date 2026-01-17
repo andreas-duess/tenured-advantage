@@ -5,7 +5,7 @@ pubDate: 2026-01-23
 author: "Andreas Duess"
 heroImage: "/images/blog/upskilling-50-ai-different-hero.jpg"
 tags: ["upskilling", "ai-learning", "career-resilience"]
-draft: true
+draft: false
 ---
 
 In the 1990s, we all learned Excel. In the 2000s, we learned digital marketing. In the 2010s, we learned mobile and social media.
