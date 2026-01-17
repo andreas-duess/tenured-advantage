@@ -6,7 +6,7 @@ import EmailCapture from '../components/EmailCapture.astro';
 import { getCollection } from 'astro:content';
 import { formatDate } from '../utils/date';
 
-const posts = (await getCollection('blog'))
+const posts = (await getCollection('how-to-thrive'))
   .filter(post => !post.data.draft)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
@@ -134,7 +134,7 @@ const posts = (await getCollection('blog'))
                 )}
                 <div class="post-content">
                   <h3>
-                    <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+                    <a href={`/how-to-thrive/${post.slug}`}>{post.data.title}</a>
                   </h3>
                   <p class="post-meta">
                     <time datetime={post.data.pubDate.toISOString()}>
@@ -142,7 +142,7 @@ const posts = (await getCollection('blog'))
                     </time>
                   </p>
                   <p>{post.data.description}</p>
-                  <a href={`/blog/${post.slug}`} class="read-more">Read more →</a>
+                  <a href={`/how-to-thrive/${post.slug}`} class="read-more">Read more →</a>
                 </div>
               </article>
             ))}

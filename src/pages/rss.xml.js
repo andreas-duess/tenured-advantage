@@ -2,7 +2,7 @@ import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 
 export async function GET(context) {
-  const posts = await getCollection('blog');
+  const posts = await getCollection('how-to-thrive');
   const sortedPosts = posts
     .filter(post => !post.data.draft)
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -15,7 +15,7 @@ export async function GET(context) {
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
-      link: `/blog/${post.slug}/`,
+      link: `/how-to-thrive/${post.slug}/`,
       author: post.data.author || 'Andreas Duess',
     })),
     customData: `<language>en-us</language>`,
