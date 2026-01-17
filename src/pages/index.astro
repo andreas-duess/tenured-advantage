@@ -16,6 +16,64 @@ const posts = (await getCollection('blog'))
   title="AI Strategy for Experienced Professionals Over 50 | Tenured Advantage"
   description="Learn how experienced professionals use AI to amplify expertise and competitive advantage. Practical AI applications for leaders over 50. Strategies from Andreas Duess, former CEO and Ivey lecturer."
 >
+  <!-- Structured Data - FAQPage Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is it too late to learn AI at 50+?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at all. While younger workers may learn tools faster, experienced professionals have something more valuable: context. You know what questions to ask, what problems matter, and how to apply technology strategically. AI amplifies that judgment—it doesn't replace it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to become a programmer to use AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The most valuable AI skills aren't technical—they're strategic. Understanding how to prompt AI effectively, evaluate outputs critically, and integrate AI into your workflow matters far more than coding. Your decades of professional judgment are the real advantage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Won't AI replace experienced workers first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The opposite is true. AI replaces routine tasks, not judgment. Junior roles that follow templates are more vulnerable than senior roles that require context, relationships, and strategic thinking. Your experience becomes more valuable, not less—if you know how to leverage it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is this different from other AI training?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most AI training treats everyone the same. We focus specifically on experienced professionals who have decades of expertise to amplify. This isn't 'AI basics'—it's strategic AI application for people who've already built careers and want to stay ahead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I'm worried about ageism in the workplace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ageism is real, but so is demand for experienced professionals who understand AI. By 2030, there will be 150 million more jobs for workers 55+. The key is positioning yourself as someone who combines experience with modern capabilities—not one or the other."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time does it take to get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can start seeing value immediately. This isn't about months of training—it's about strategic shifts in how you work. Many professionals begin getting ROI from AI within days, not weeks. The key is knowing where to start and what matters."
+          }
+        }
+      ]
+    }
+  </script>
+
   <Header />
 
   <main>
@@ -112,6 +170,55 @@ const posts = (await getCollection('blog'))
           </div>
           <div class="about-image">
             <img src="/Andreas-Headshot.jpg" alt="Andreas Duess" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Is it too late to learn AI at 50+?</h3>
+            <p>
+              Not at all. While younger workers may learn tools faster, experienced professionals have something more valuable: context. You know what questions to ask, what problems matter, and how to apply technology strategically. AI amplifies that judgment—it doesn't replace it.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Do I need to become a programmer to use AI?</h3>
+            <p>
+              No. The most valuable AI skills aren't technical—they're strategic. Understanding how to prompt AI effectively, evaluate outputs critically, and integrate AI into your workflow matters far more than coding. Your decades of professional judgment are the real advantage.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Won't AI replace experienced workers first?</h3>
+            <p>
+              The opposite is true. AI replaces routine tasks, not judgment. Junior roles that follow templates are more vulnerable than senior roles that require context, relationships, and strategic thinking. Your experience becomes more valuable, not less—if you know how to leverage it.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>How is this different from other AI training?</h3>
+            <p>
+              Most AI training treats everyone the same. We focus specifically on experienced professionals who have decades of expertise to amplify. This isn't "AI basics"—it's strategic AI application for people who've already built careers and want to stay ahead.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What if I'm worried about ageism in the workplace?</h3>
+            <p>
+              Ageism is real, but so is demand for experienced professionals who understand AI. By 2030, there will be 150 million more jobs for workers 55+. The key is positioning yourself as someone who combines experience with modern capabilities—not one or the other.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>How much time does it take to get started?</h3>
+            <p>
+              You can start seeing value immediately. This isn't about months of training—it's about strategic shifts in how you work. Many professionals begin getting ROI from AI within days, not weeks. The key is knowing where to start and what matters.
+            </p>
           </div>
         </div>
       </div>
@@ -332,6 +439,47 @@ const posts = (await getCollection('blog'))
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   }
 
+  .faq-section {
+    padding: 5rem 0;
+    background: #ffffff;
+  }
+
+  .faq-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+    color: #1f2937;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+  }
+
+  .faq-item h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+
+  .faq-item p {
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+
   @media (max-width: 1024px) {
     .about-grid {
       grid-template-columns: 1fr;
@@ -362,7 +510,8 @@ const posts = (await getCollection('blog'))
 
     .value-props,
     .latest-posts,
-    .about-preview {
+    .about-preview,
+    .faq-section {
       padding: 3rem 0;
     }
 
@@ -370,6 +519,10 @@ const posts = (await getCollection('blog'))
     .posts-grid {
       grid-template-columns: 1fr;
       gap: 2rem;
+    }
+
+    .faq-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>

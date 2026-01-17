@@ -75,6 +75,33 @@ const siteTitle = title === siteName ? title : `${title} | ${siteName}`;
       gtag('config', 'G-MJ6020FH4W');
     </script>
 
+    <!-- Structured Data - Person Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Andreas Duess",
+        "url": "https://tenuredadvantage.com/about",
+        "image": "https://tenuredadvantage.com/Andreas-Headshot.jpg",
+        "jobTitle": ["CEO", "Speaker", "Educator"],
+        "worksFor": [
+          {
+            "@type": "Organization",
+            "name": "6 Seeds"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Ivey Business School"
+          }
+        ],
+        "description": "Andreas helps experienced professionals leverage AI to amplify their competitive advantage. With 30+ years bridging tech and traditional industries, he teaches AI strategy at Ivey Business School and keynotes at conferences worldwide.",
+        "sameAs": [
+          "https://linkedin.com/in/andreasduess"
+        ],
+        "knowsAbout": ["Artificial Intelligence", "Digital Transformation", "AI Strategy", "Career Development", "Business Strategy"]
+      }
+    </script>
+
   </head>
   <body>
     <slot />
