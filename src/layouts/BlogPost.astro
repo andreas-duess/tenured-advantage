@@ -13,11 +13,12 @@ interface Props {
   pubDate: Date;
   updatedDate?: Date;
   heroImage?: string;
+  altText?: string;
   author?: string;
   tags?: string[];
 }
 
-const { title, description, pubDate, updatedDate, heroImage, author = 'Andreas Duess', tags = [] } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, altText, author = 'Andreas Duess', tags = [] } = Astro.props;
 
 // Get related articles based on shared tags, with fallback to recent posts
 const allPosts = await getCollection('blog');
@@ -114,7 +115,7 @@ if (relatedPosts.length < 2) {
   <main class="article-container">
     <article class="blog-post">
       {heroImage && (
-        <img src={heroImage} alt={title} class="hero-image" />
+        <img src={heroImage} alt={altText || title} class="hero-image" />
       )}
 
       <header class="article-header">
