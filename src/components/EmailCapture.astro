@@ -182,11 +182,17 @@ const {
         button.textContent = 'Subscribing...';
         button.disabled = true;
 
-        // For now, just log it. You'll replace this with your actual API endpoint
-        console.log('Subscribing email:', email);
+        // Submit to ConvertKit via our API endpoint
+        const response = await fetch('/api/subscribe', {
+          method: 'POST',
+          body: formData
+        });
 
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(result.error || 'Subscription failed');
+        }
 
         button.textContent = '✓ Subscribed!';
         formElement.querySelector('input')?.setAttribute('disabled', 'true');
