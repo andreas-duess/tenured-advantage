@@ -3,7 +3,7 @@ title: "The AI Skills Gap Is Your Biggest Opportunity"
 description: "While companies panic about the AI skills shortage, experienced professionals with the right training are writing their own terms. Here's why the gap is actually good news."
 pubDate: 2026-01-25
 author: "Andreas Duess"
-heroImage: "/images/blog/ai-skills-gap-opportunity-hero.jpg"
+heroImage: "/images/business_woman_laptop.webp"
 tags: ["ai-skills", "career-opportunity", "skills-gap"]
 draft: false
 ---
