@@ -3,7 +3,8 @@ title: "Why 9-in-10 Hiring Managers Won't Hire You for AI Roles (And How to Chan
 description: "Hiring managers admit they prefer candidates under 35 for AI roles—even when they acknowledge experienced professionals perform better. Here's how to prove the bias wrong."
 pubDate: 2026-01-21
 author: "Andreas Duess"
-heroImage: "/images/blog/9-in-10-hiring-managers-hero.jpg"
+heroImage: "/images/job-interview-scene.webp"
+altText: "Professional job interview scene with candidates and hiring manager"
 tags: ["ageism", "ai-careers", "hiring-bias"]
 draft: false
 ---
