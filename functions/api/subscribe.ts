@@ -1,15 +1,20 @@
-import type { APIRoute } from 'astro';
+interface Env {
+  CONVERTKIT_API_KEY: string;
+}
 
-export const POST: APIRoute = async ({ request }) => {
-  const CONVERTKIT_API_KEY = import.meta.env.CONVERTKIT_API_KEY;
+export async function onRequestPost(context: { request: Request; env: Env }) {
+  const { request, env } = context;
   const CONVERTKIT_FORM_ID = '8984502';
 
-  if (!CONVERTKIT_API_KEY) {
+  if (!env.CONVERTKIT_API_KEY) {
     return new Response(JSON.stringify({
       error: 'ConvertKit API key not configured'
     }), {
       status: 500,
-      headers: { 'Content-Type': 'application/json' }
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
     });
   }
 
@@ -22,7 +27,10 @@ export const POST: APIRoute = async ({ request }) => {
         error: 'Email is required'
       }), {
         status: 400,
-        headers: { 'Content-Type': 'application/json' }
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        }
       });
     }
 
@@ -33,7 +41,10 @@ export const POST: APIRoute = async ({ request }) => {
         error: 'Invalid email format'
       }), {
         status: 400,
-        headers: { 'Content-Type': 'application/json' }
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        }
       });
     }
 
@@ -46,7 +57,7 @@ export const POST: APIRoute = async ({ request }) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          api_key: CONVERTKIT_API_KEY,
+          api_key: env.CONVERTKIT_API_KEY,
           email: email,
         }),
       }
@@ -60,7 +71,10 @@ export const POST: APIRoute = async ({ request }) => {
         error: 'Failed to subscribe. Please try again.'
       }), {
         status: response.status,
-        headers: { 'Content-Type': 'application/json' }
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        }
       });
     }
 
@@ -69,7 +83,10 @@ export const POST: APIRoute = async ({ request }) => {
       message: 'Successfully subscribed!'
     }), {
       status: 200,
-      headers: { 'Content-Type': 'application/json' }
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
     });
 
   } catch (error) {
@@ -78,7 +95,10 @@ export const POST: APIRoute = async ({ request }) => {
       error: 'An unexpected error occurred. Please try again.'
     }), {
       status: 500,
-      headers: { 'Content-Type': 'application/json' }
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
     });
   }
-};
+}
