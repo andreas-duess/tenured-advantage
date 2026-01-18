@@ -1,7 +1,7 @@
 ---
 title: "Generative AI for Business: The Experienced Professional's Advantage"
 description: "Why experienced business professionals—not technical experts—are best positioned to capture generative AI's value. The strategic applications others miss."
-pubDate: 2026-01-29
+pubDate: 2026-01-18
 author: "Andreas Duess"
 heroImage: "/images/executives-wall-street.webp"
 altText: "Business executives on Wall Street - strategic leadership in the AI era"

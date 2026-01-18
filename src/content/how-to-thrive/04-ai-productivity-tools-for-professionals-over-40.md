@@ -1,7 +1,7 @@
 ---
 title: "AI Productivity Tools Every Professional Over 40 Should Know"
 description: "Stop drowning in busy work. These AI tools handle research, writing, analysis, and coordination—freeing you to focus on strategic work only you can do."
-pubDate: 2026-01-26
+pubDate: 2026-01-18
 author: "Andreas Duess"
 heroImage: "/images/business-man-aii-presentation.webp"
 tags: ["AI tools", "productivity", "AI for professionals", "work efficiency"]

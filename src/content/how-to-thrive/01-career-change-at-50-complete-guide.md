@@ -1,7 +1,7 @@
 ---
 title: "Career Change at 50: The Complete Guide to Reinvention"
 description: "Everything you need to know about making a successful career change after 50. Why experience is your secret weapon, how AI changes the game, and the 7-step framework that works."
-pubDate: 2026-01-20
+pubDate: 2026-01-18
 author: "Andreas Duess"
 heroImage: "/images/woman-sailing-yacht.webp"
 altText: "Professional woman confidently sailing yacht, navigating new waters - metaphor for career reinvention"

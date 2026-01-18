@@ -36,9 +36,6 @@ const posts = (await getCollection('how-to-thrive'))
                 <a href={`/how-to-thrive/${post.slug}`}>{post.data.title}</a>
               </h2>
               <div class="post-meta">
-                <time datetime={post.data.pubDate.toISOString()}>
-                  {formatDate(post.data.pubDate)}
-                </time>
                 <span class="author">by {post.data.author}</span>
               </div>
               {post.data.tags.length > 0 && (

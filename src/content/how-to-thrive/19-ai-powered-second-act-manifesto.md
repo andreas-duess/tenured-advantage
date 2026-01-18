@@ -1,7 +1,7 @@
 ---
 title: "Building the AI-Powered Second Act: A Manifesto"
 description: "Your first act built expertise. Your second act leverages it. AI is the tool that makes your next 20 years more valuable than your last 20. Here's the blueprint."
-pubDate: 2026-02-02
+pubDate: 2026-01-18
 author: "Andreas Duess"
 heroImage: "/images/in-the-lab.webp"
 altText: "Business executives in strategic planning - building the second act"

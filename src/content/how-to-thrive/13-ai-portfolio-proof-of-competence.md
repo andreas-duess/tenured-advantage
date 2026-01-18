@@ -1,7 +1,7 @@
 ---
 title: "The AI Portfolio: Proof of Competence for Experienced Professionals"
 description: "Hiring managers don't believe promises. They believe proof. Here's how to build an AI portfolio that demonstrates undeniable capability—even if you have zero AI experience today."
-pubDate: 2026-01-27
+pubDate: 2026-01-18
 author: "Andreas Duess"
 heroImage: "/images/trade-show-meeting.webp"
 altText: "Business executives in strategic conversation - demonstrating professional competence"

@@ -121,14 +121,6 @@ if (relatedPosts.length < 2) {
       <header class="article-header">
         <h1>{title}</h1>
         <div class="article-meta">
-          <time datetime={pubDate.toISOString()}>
-            {formatDate(pubDate)}
-          </time>
-          {updatedDate && (
-            <span class="updated">
-              (Updated: {formatDate(updatedDate)})
-            </span>
-          )}
           <span class="author">by {author}</span>
         </div>
         {tags.length > 0 && (

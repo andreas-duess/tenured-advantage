@@ -1,7 +1,7 @@
 ---
 title: "AI Interview Questions for Experienced Professionals (And How to Answer Them)"
 description: "Hiring managers ask these 15 questions to test AI competence. Most candidates fail. Here are the answers that prove you're not just current—you're ahead."
-pubDate: 2026-01-28
+pubDate: 2026-01-18
 author: "Andreas Duess"
 heroImage: "/images/executives-in-elevator.webp"
 altText: "Professional job interview scene - confident candidate demonstrating competence"

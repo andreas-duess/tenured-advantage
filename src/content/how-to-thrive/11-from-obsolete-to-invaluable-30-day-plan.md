@@ -1,7 +1,7 @@
 ---
 title: "From Obsolete to Invaluable: Your 30-Day AI Transformation Plan"
 description: "You don't need six months or a bootcamp. This proven 30-day plan transforms experienced professionals from AI-anxious to AI-fluent—with results you can demonstrate immediately."
-pubDate: 2026-01-25
+pubDate: 2026-01-18
 author: "Andreas Duess"
 heroImage: "/images/business_woman_laptop.webp"
 altText: "Professional woman working confidently on laptop - transformation through AI learning"
