@@ -1,7 +1,7 @@
 ---
 title: "The Most Important Attribute for AI Success Isn't Youth—It's Curiosity"
 description: "Experience combined with curiosity beats youth and technical skills in AI adoption. Learn why 'that's funny' matters more than 'eureka.'"
-pubDate: 2026-01-18
+pubDate: 2026-01-18T14:30:00
 author: "Andreas Duess"
 heroImage: "/images/playfulness.webp"
 tags: ["AI adoption", "curiosity", "experience advantage", "learning"]
