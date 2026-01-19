@@ -36,7 +36,7 @@ The WSJ article quoted a CEO who's been coding since middle school: "I spent my 
 
 They describe people feeling "awe followed by sadness." The realization that this tool can replicate expertise they built over an entire career.
 
-I get that feeling.
+**I get that feeling.**
 
 But here's what I've learned using Claude Code every day for months: it doesn't replicate your expertise.
 
@@ -46,17 +46,17 @@ The difference matters.
 
 ## What Claude Code Actually Can't Do
 
-Claude Code created the code for this website.
+**Claude Code created the code for this website**.
 
 But it didn't decide that experienced professionals need a voice countering ageism in AI. It didn't know what message would resonate with people in their 50s feeling pushed out. It didn't figure out which topics matter vs. which ones are just hype. It didn't tell me how to position myself differently from consultants who've never actually run a business in a traditional industry.
 
 It didn't know what tone would feel authentic.
 
-Claude Code wrote the first draft of this article.
+**Claude Code wrote the first draft of this article.**
 
 But it didn't know which angle would land. It didn't choose the personal examples. It didn't decide where to push back on the narrative vs. where to validate it.
 
-Claude Code organized my expenses.
+**Claude Code organized my expenses.**
 
 But it didn't know which anomalies were mistakes and which were strategic decisions. It didn't interpret what the spending patterns meant for my business.
 
@@ -66,13 +66,13 @@ Every task I give Claude Code requires me to know what matters and why.
 
 Pattern recognition. I've seen enough business cycles to know signal from noise. I can look at data and spot what's changed, not just what's different.
 
-Judgment. I know which problems are worth solving and which ones just sound impressive. I know what "good" looks like because I've shipped work for three decades.
+**Judgment.** I know which problems are worth solving and which ones just sound impressive. I know what "good" looks like because I've shipped work for three decades.
 
-Context. I understand how different parts of a business connect. Which decisions have downstream effects that aren't obvious.
+**Context.** I understand how different parts of a business connect. Which decisions have downstream effects that aren't obvious.
 
-Relationships. I know how to communicate with different stakeholders. What clients need to hear vs. what makes them tune out.
+**Relationships.** I know how to communicate with different stakeholders. What clients need to hear vs. what makes them tune out.
 
-Priorities. I know which tasks move the needle vs. which ones are busy work.
+**Priorities.** I know which tasks move the needle vs. which ones are busy work.
 
 Claude Code is phenomenally capable. But it needs someone to point it in the right direction. Someone to evaluate its work. Someone to know what questions to ask.
 
@@ -84,7 +84,7 @@ A junior professional with Claude Code can write code, design websites, analyze 
 
 That's real. That should make anyone over 40 pause.
 
-But here's what they can't do:
+**But here's what they can't do:**
 
 - They don't know which features will get used vs. which ones sound cool but solve no problem.
 - They haven't seen enough failed projects to recognize warning signs early.
@@ -133,10 +133,10 @@ People ask me how this works tactically.
 
 I treat Claude Code like a phenomenally capable junior partner who needs clear direction.
 
-- For email: I tell it what I'm trying to accomplish, what tone I need, who I'm writing to. It drafts. I edit with my judgment and voice.
-- For writing: I give it the argument, the audience, the tone. It gives me structure and first drafts. I refine with the insights only I can add.
-- For website design: I told it what problems I was solving, what audience I was serving, what tone I needed. It built. I directed the strategic decisions.
-- For business operations: I give it data and tell it what patterns to look for. It analyzes. I interpret based on decades of knowing what matters.
+- **For email:** I tell it what I'm trying to accomplish, what tone I need, who I'm writing to. It drafts. I edit with my judgment and voice.
+- **For writing:** I give it the argument, the audience, the tone. It gives me structure and first drafts. I refine with the insights only I can add.
+- **For website design:** I told it what problems I was solving, what audience I was serving, what tone I needed. It built. I directed the strategic decisions.
+- **For business operations:** I give it data and tell it what patterns to look for. It analyzes. I interpret based on decades of knowing what matters.
 
 I'm not using it to do my job. I'm using it to do my job better.
 
