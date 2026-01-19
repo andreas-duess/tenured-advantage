@@ -136,11 +136,6 @@ const posts = (await getCollection('how-to-thrive'))
                   <h3>
                     <a href={`/how-to-thrive/${post.slug}`}>{post.data.title}</a>
                   </h3>
-                  <p class="post-meta">
-                    <time datetime={post.data.pubDate.toISOString()}>
-                      {formatDate(post.data.pubDate)}
-                    </time>
-                  </p>
                   <p>{post.data.description}</p>
                   <a href={`/how-to-thrive/${post.slug}`} class="read-more">Read more →</a>
                 </div>
@@ -368,12 +363,6 @@ const posts = (await getCollection('how-to-thrive'))
 
   .post-content h3 a:hover {
     color: #3e4956;
-  }
-
-  .post-meta {
-    color: #6b7280;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
   }
 
   .post-content p {
