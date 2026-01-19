@@ -1,7 +1,7 @@
 ---
 title: "The Experience Multiplier: Why AI Makes You More Valuable at 50 Than at 30"
 description: "AI doesn't replace experience—it amplifies it. Here's why the combination of deep expertise and AI tools creates exponential value that youth alone can't match."
-pubDate: 2026-01-18
+pubDate: 2026-01-24
 author: "Andreas Duess"
 heroImage: "/images/executives-conversation.webp"
 tags: ["AI", "experience", "career advantage", "professional development"]
@@ -14,7 +14,7 @@ The conventional wisdom says automation threatens experienced professionals beca
 
 This is fundamentally wrong.
 
-AI doesn't make experienced workers obsolete. It makes them exponentially more valuable.
+[AI doesn't make experienced workers obsolete. It makes them exponentially more valuable](https://www.pwc.com/gx/en/news-room/press-releases/2025/ai-linked-to-a-fourfold-increase-in-productivity-growth.html).
 
 Here's why: AI handles execution. You provide judgment. And judgment—the ability to know what matters, spot patterns, and make strategic decisions—is exactly what 20-30 years of experience gives you.
 

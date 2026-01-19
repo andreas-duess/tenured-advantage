@@ -1,13 +1,13 @@
 ---
 title: "AI Productivity Tools Every Professional Over 40 Should Know"
 description: "Stop drowning in busy work. These AI tools handle research, writing, analysis, and coordination—freeing you to focus on strategic work only you can do."
-pubDate: 2026-01-18
+pubDate: 2026-01-26
 author: "Andreas Duess"
 heroImage: "/images/business-man-aii-presentation.webp"
 tags: ["AI tools", "productivity", "AI for professionals", "work efficiency"]
 draft: false
 ---
-Let's start with the uncomfortable truth: we're probably spending 60-70% of our time on work that doesn't require our expertise.
+Let's start with the uncomfortable truth: [we're probably spending 60-70% of our time on work that doesn't require our expertise](https://asana.com/resources/why-work-about-work-is-bad).
 
 Research. First drafts. Data analysis. Email management. Meeting coordination. Status updates.
 
@@ -236,7 +236,7 @@ Don't try to learn everything at once. Start with one tool per week.
 - **Day 24-25**: Explore AI calendar management
 - **Day 26-30**: Evaluate time saved and expand usage
 
-**Goal**: By day 30, you should be using AI tools daily and reclaiming 5-10 hours per week.
+**Goal**: By day 30, you should be using AI tools daily and [reclaiming 5-10 hours per week](https://www.lennysnewsletter.com/p/ai-tools-are-overdelivering-results).
 
 ## The Three Rules for AI Productivity
 

@@ -1,7 +1,7 @@
 ---
 title: "Generative AI for Business: The Experienced Professional's Advantage"
 description: "Why experienced business professionals—not technical experts—are best positioned to capture generative AI's value. The strategic applications others miss."
-pubDate: 2026-01-18
+pubDate: 2026-01-29
 author: "Andreas Duess"
 heroImage: "/images/executives-wall-street.webp"
 altText: "Business executives on Wall Street - strategic leadership in the AI era"
@@ -64,7 +64,7 @@ That's layer one. Important, but not where the real advantage lies.
 - Automate routine research
 - Create content templates
 
-**Value:** 20-40% time savings on routine work
+**Value:** [20-40% time savings on routine work](https://www.stlouisfed.org/on-the-economy/2025/feb/impact-generative-ai-work-productivity)
 
 **Why it matters:** Frees capacity for higher-value work
 
@@ -102,7 +102,7 @@ That's layer one. Important, but not where the real advantage lies.
 
 **Why it matters:** This is where you stop competing on equal terms and create differentiated value.
 
-**The reality:** Less than 5% of business professionals operate here. This is where the real opportunity lives.
+**The reality:** [Less than 5% of business professionals operate here](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai). This is where the real opportunity lives.
 
 ## Why Experienced Professionals Win at Layer 3
 

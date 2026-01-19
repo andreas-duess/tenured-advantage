@@ -1,9 +1,9 @@
 ---
 title: "Why Experience Is Your Unfair Advantage with AI"
 description: "While younger professionals chase AI trends, experienced professionals have something far more valuable: context, judgment, and the wisdom to know what questions to ask."
-pubDate: 2026-01-18
+pubDate: 2026-01-16
 author: "Andreas Duess"
-heroImage: "/images/on-the-farm.webp"
+heroImage: "/images/blog/experience-advantage-hero.jpg"
 tags: ["AI Strategy", "Experience Advantage", "Career Longevity"]
 draft: false
 ---
@@ -14,7 +14,7 @@ This narrative is not just wrong. It's backwards.
 
 ## The Say-Do Gap in AI Adoption
 
-Here's what the data actually shows: 78% of professionals over 50 report experiencing ageism in the workplace. The estimated economic impact? $850 billion annually. Meanwhile, 68% say they want to learn AI skills but don't know where to start.
+Here's what the data actually shows: [78% of professionals over 50 report experiencing ageism in the workplace](https://www.aarp.org/pri/topics/work-finances-retirement/employers-workforce/age-discrimination-workplace/). The estimated economic impact? [$850 billion annually](https://www.aarp.org/politics-society/advocacy/info-2020/age-discrimination-economic-impact.html). Meanwhile, 68% say they want to learn AI skills but don't know where to start.
 
 But here's the part that matters: **experience is the most valuable input you can give an AI system.**
 

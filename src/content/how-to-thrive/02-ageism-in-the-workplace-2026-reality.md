@@ -1,7 +1,7 @@
 ---
 title: "Ageism in the Workplace: The 2026 Reality (And How to Fight Back)"
 description: "The data on workplace ageism is sobering. But the narrative is incomplete. Here's what's really happening—and the strategic response that actually works."
-pubDate: 2026-01-18
+pubDate: 2026-01-22
 author: "Andreas Duess"
 heroImage: "/images/man-boxing-workout.webp"
 altText: "Professional in boxing workout demonstrating resilience and fighting spirit"
@@ -11,9 +11,9 @@ draft: false
 
 Let's start with the uncomfortable truth: ageism in the workplace is real, pervasive, and well-documented.
 
-According to AARP, nearly 64% of workers aged 45+ have experienced age discrimination. The numbers are even worse in certain industries—tech, finance, advertising—where "cultural fit" often means "young."
+[According to AARP](https://www.aarp.org/pri/topics/work-finances-retirement/employers-workforce/age-discrimination-workplace/), nearly 64% of workers aged 45+ have experienced age discrimination. The numbers are even worse in certain industries—tech, finance, advertising—where "cultural fit" often means "young."
 
-Job seekers over 50 face rejection rates twice as high as younger candidates with identical qualifications. Once unemployed, older workers take 50% longer to find new positions. And when they do, they often accept lower salaries than they previously earned.
+Job seekers over 50 face higher rejection rates and [historically experience longer unemployment durations](https://www.oecd.org/en/publications/2025/07/oecd-employment-outlook-2025_5345f034/full-report/component-7.html) than younger candidates. And when they do find positions, they often accept lower salaries than they previously earned.
 
 The data is sobering. But the narrative is incomplete.
 
@@ -48,7 +48,7 @@ The most common justification for age discrimination is the "skills gap"—the c
 
 The data doesn't support this.
 
-A Pew Research study found no significant difference in technology adoption rates between workers over 50 and under 35 when controlling for job requirements and access to training. Older workers aren't less capable of learning new tools. They're less likely to be offered training—which then becomes justification for not hiring them.
+[Research from AARP and LinkedIn](https://www.aarp.org/work/employers/new-tech-skills-study/) found that workers over 50 are rapidly closing the technology gap, with tech skills growth rates nearly double that of younger workers over the past five years. Older workers aren't less capable of learning new tools. They're less likely to be offered training—which then becomes justification for not hiring them.
 
 This is a self-fulfilling prophecy, not an empirical reality.
 

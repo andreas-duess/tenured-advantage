@@ -1,7 +1,7 @@
 ---
 title: "Why 9-in-10 Hiring Managers Won't Hire You for AI Roles (And How to Change Their Minds)"
 description: "Hiring managers admit they prefer candidates under 35 for AI roles—even when they acknowledge experienced professionals perform better. Here's how to prove the bias wrong."
-pubDate: 2026-01-18
+pubDate: 2026-01-21
 author: "Andreas Duess"
 heroImage: "/images/job-interview-scene.webp"
 altText: "Professional job interview scene with candidates and hiring manager"
@@ -22,9 +22,9 @@ But here's the thing about bias: Once we understand it, we can neutralize it.
 ## The Data We Can't Ignore
 
 The numbers are stark:
-- **9 in 10 hiring managers** prefer candidates under 35 for AI-related roles (HR Dive, 2024)
-- **78% of workers over 50** have experienced age discrimination (AARP)
-- **93% believe ageism** is widespread in the workplace
+- [**9 in 10 hiring managers** prefer candidates under 35 for AI-related roles](https://www.hrdive.com/news/few-mid-career-and-older-workers-use-ai-at-work/729828/)
+- [**78% of workers over 50** have experienced age discrimination](https://www.aarp.org/pri/topics/work-finances-retirement/employers-workforce/age-discrimination-workplace/)
+- [**93% believe ageism** is widespread in the workplace](https://www.aarp.org/pri/topics/work-finances-retirement/employers-workforce/age-discrimination-workplace/)
 
 But here's where it gets interesting:
 
@@ -48,7 +48,7 @@ AI adoption has nothing to do with age. It has everything to do with willingness
 
 The data contradicts this completely:
 - 68% of professionals 50+ think it's very important to start building AI skills
-- About a quarter who aren't currently using AI tools are actively interested in learning
+- [About a quarter who aren't currently using AI tools are actively interested in learning](https://www.generation.org/news/age-proofing-ai-new-research-from-generation/)
 - Workers who engaged in AI upskilling showed 27% higher job retention rates
 
 Experienced professionals aren't checked out. They're leaning in. The companies that see this are winning.

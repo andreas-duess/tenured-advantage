@@ -1,7 +1,7 @@
 ---
 title: "Career Change at 50: The Complete Guide to Reinvention"
 description: "Everything you need to know about making a successful career change after 50. Why experience is your secret weapon, how AI changes the game, and the 7-step framework that works."
-pubDate: 2026-01-18
+pubDate: 2026-01-20
 author: "Andreas Duess"
 heroImage: "/images/woman-sailing-yacht.webp"
 altText: "Professional woman confidently sailing yacht, navigating new waters - metaphor for career reinvention"
@@ -55,9 +55,9 @@ This doesn't mean being picky to the point of paralysis. It means having the con
 
 Let's address the elephant in the room: ageism is real.
 
-According to AARP research, nearly two-thirds of workers aged 45 and older have experienced age discrimination. The numbers are worse in tech, finance, and other "youth-focused" industries.
+[According to AARP research](https://www.aarp.org/pri/topics/work-finances-retirement/employers-workforce/age-discrimination-workplace/), nearly two-thirds of workers aged 45 and older have experienced age discrimination. The numbers are worse in tech, finance, and other "youth-focused" industries.
 
-But here's what the headlines miss: ageism isn't universal. It's industry-specific, role-specific, and situation-specific. And increasingly, it's being disrupted by labor shortages, demographic shifts, and the rise of remote work.
+But here's what the headlines miss: ageism isn't universal. It's industry-specific, role-specific, and situation-specific. And increasingly, it's being disrupted by [labor shortages, demographic shifts](https://www.conference-board.org/research/solutions-briefs/responding-to-us-labor-shortages), and the rise of remote work.
 
 ### The Industries Where Age Is an Asset
 
@@ -97,7 +97,7 @@ Younger workers have to learn these patterns from scratch. You already know them
 
 ### The Judgment Advantage
 
-In his book *Range*, David Epstein makes a compelling case for "late specialization"—the idea that diverse experience across multiple domains creates better problem-solvers than early, narrow expertise.
+In his book [*Range*](https://davidepstein.com/the-range/), David Epstein makes a compelling case for "late specialization"—the idea that diverse experience across multiple domains creates better problem-solvers than early, narrow expertise.
 
 At 50, you're the embodiment of this principle. You've worked across economic cycles, technologies, and business models. You've seen what happens when companies over-rotate on short-term thinking. You've watched industries get disrupted and learned to spot early warning signs.
 
@@ -115,7 +115,7 @@ Here's the part most career transition guides miss entirely: AI doesn't make exp
 
 The conventional wisdom says automation threatens older workers because they're "less tech-savvy" or "resistant to change." This is backwards.
 
-AI doesn't replace experience. It amplifies it.
+[AI doesn't replace experience. It amplifies it](https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html).
 
 ### AI as Your Force Multiplier
 
