@@ -398,12 +398,6 @@ Reading about generative AI doesn't create business value. Applying it does.
 - Create new service offering or positioning
 - Quantify competitive advantage
 
-**Or:** Join The Experience Multiplier and master all three layers with expert guidance, proven frameworks, and cohort accountability.
-
-**Next cohort starts February 2026.** Limited to 25 professionals.
-
-Learn more at [experienceadvantage.ai/course](#)
-
 ---
 
 Generative AI is the first technology in decades where business expertise matters more than technical expertise.

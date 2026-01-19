@@ -40,11 +40,12 @@ p {
 
 /* Links */
 a {
-  color: #3e4956;
-  text-decoration: none;
+  color: #f97316; /* Orange for visibility */
+  text-decoration: underline; /* Always underlined for clarity */
 }
 
 a:hover {
+  color: #ea580c; /* Slightly darker orange on hover */
   text-decoration: underline;
 }
 

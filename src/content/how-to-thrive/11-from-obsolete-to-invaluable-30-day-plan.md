@@ -574,12 +574,6 @@ That's what The Experience Multiplier is designed for.
 - **Direct access** to AI transformation frameworks
 - **Accountability and community** that keeps you on track
 
-The 30-day plan gives you foundation. The Experience Multiplier gives you mastery.
-
-**Next cohort starts in February.** Limited to 25 professionals to ensure personalized attention.
-
-Learn more at [experienceadvantage.ai/course](#)
-
 ---
 
 The 30 days start now. Not tomorrow. Not Monday. Now.

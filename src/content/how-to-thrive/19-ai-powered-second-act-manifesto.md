@@ -316,16 +316,6 @@ This is your manifesto. Own it.
 
 ---
 
-**Ready to build your AI-powered second act?**
-
-Join The Experience Multiplier and transform your expertise into unstoppable competitive advantage.
-
-**Next cohort starts February 2026.** Limited to 25 professionals who refuse to accept decline.
-
-Learn more at [experienceadvantage.ai/course](#)
-
----
-
 Your first act built expertise.
 
 Your second act leverages it.

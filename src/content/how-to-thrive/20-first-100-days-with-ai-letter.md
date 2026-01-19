@@ -335,16 +335,6 @@ I'm rooting for you.
 
 ---
 
-**Want guidance through your first 100 days?**
-
-Join The Experience Multiplier and transform your expertise with proven frameworks, expert support, and cohort accountability.
-
-**Next cohort starts February 2026.** Limited to 25 professionals.
-
-Learn more at [experienceadvantage.ai/course](#)
-
----
-
 Your expertise took decades to build.
 
 Your AI competence takes 100 days.

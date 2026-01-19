@@ -545,12 +545,6 @@ Portfolio building isn't optional. It's the price of entry for AI-enhanced caree
 - Create portfolio showcase
 - Share with network
 
-**Or:** Join The Experience Multiplier course and build your portfolio with expert guidance, peer feedback, and accountability.
-
-**Next cohort starts February 2026.** Limited to 25 professionals.
-
-Learn more at [experienceadvantage.ai/course](#)
-
 ---
 
 Hiring managers don't believe promises. They believe proof.

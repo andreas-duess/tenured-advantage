@@ -389,16 +389,6 @@ Position accordingly.
 
 ---
 
-**Ready to build the AI competence the future demands?**
-
-Join The Experience Multiplier and transform your expertise into unstoppable career advantage.
-
-**Next cohort starts February 2026.** Limited to 25 professionals.
-
-Learn more at [experienceadvantage.ai/course](#)
-
----
-
 The future of work doesn't replace experience. It rewards it.
 
 Your move.

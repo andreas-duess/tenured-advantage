@@ -19,7 +19,10 @@ const { author = 'Andreas Duess' } = Astro.props;
       AI strategy at Ivey Business School, and has successfully built and exited a marketing agency.
       He keynotes at conferences worldwide and advises governments on AI policy.
     </p>
-    <a href="/about" class="author-link">Learn more about Andreas →</a>
+    <div class="author-links">
+      <a href="/about" class="author-link">Learn more about Andreas →</a>
+      <a href="https://linkedin.com/in/andreasduess" class="author-link linkedin-link" target="_blank" rel="noopener noreferrer">Connect with Andreas on LinkedIn →</a>
+    </div>
   </div>
 </div>
 
@@ -41,7 +44,7 @@ const { author = 'Andreas Duess' } = Astro.props;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
-    border: 3px solid #3e4956;
+    border: 3px solid #ff6b35;
   }
 
   .author-content {
@@ -69,6 +72,12 @@ const { author = 'Andreas Duess' } = Astro.props;
     line-height: 1.7;
     margin-bottom: 1rem;
     font-size: 1rem;
+  }
+
+  .author-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .author-link {

@@ -339,16 +339,6 @@ Use it.
 
 ---
 
-**Ready to turn your experience into an unfair advantage?**
-
-Join The Experience Multiplier and build the AI competence that makes your expertise unstoppable.
-
-**Next cohort starts February 2026.** Limited to 25 professionals.
-
-Learn more at [experienceadvantage.ai/course](#)
-
----
-
 Age doesn't determine AI capability. Judgment does.
 
 You have the judgment. Now add the AI.

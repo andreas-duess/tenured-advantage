@@ -474,12 +474,6 @@ The ROI analysis is clear. 80 hours and $500 returns $30K-180K+ in year one for 
 - Position for new opportunities
 - Capture ROI through promotion, new role, or market repositioning
 
-**Or:** Join The Experience Multiplier for structured approach with proven ROI and cohort support.
-
-**Next cohort starts February 2026.** Limited to 25 professionals.
-
-Learn more at [experienceadvantage.ai/course](#)
-
 ---
 
 The math is simple.

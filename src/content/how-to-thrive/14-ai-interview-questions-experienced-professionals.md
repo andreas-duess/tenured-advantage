@@ -410,19 +410,6 @@ Reading this article doesn't prepare you for interviews. Practicing does.
 
 ## Take the Next Step
 
-Interview preparation is essential. But sustained AI capability requires more than cramming before interviews.
-
-**The Experience Multiplier** provides:
-- Comprehensive AI skill development
-- Portfolio projects you can reference in interviews
-- Practice answering these exact questions with expert feedback
-- Cohort of peers for role-playing and feedback
-- Ongoing skill development beyond interview prep
-
-**Next cohort starts February 2026.** Limited to 25 professionals.
-
-Learn more at [experienceadvantage.ai/course](#)
-
 ---
 
 These 15 questions separate candidates who claim AI competence from those who can prove it.
