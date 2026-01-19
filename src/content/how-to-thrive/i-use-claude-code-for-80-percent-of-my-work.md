@@ -1,7 +1,7 @@
 ---
 title: "I Use Claude Code for 80% of My Work (And I'm Not a Developer)"
 description: "I use Claude Code to check email, write content, design websites, organize expenses, and run my businesses. The difference between me and a 25-year-old using it? I know which tasks actually matter."
-pubDate: 2026-01-26
+pubDate: 2026-01-31
 author: "Andreas Duess"
 heroImage: "/images/claude-code.webp"
 tags: ["AI", "Claude Code", "productivity", "experience-advantage"]
