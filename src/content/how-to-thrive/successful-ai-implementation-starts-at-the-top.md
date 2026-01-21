@@ -1,7 +1,7 @@
 ---
 title: "AI Implementation Succeeds at the Top: Why Your Experience is the Unlock"
 description: "The data is clear: senior leadership support is the single biggest predictor of AI implementation success. If you're experienced enough to lead, you're exactly who your organization needs right now."
-pubDate: 2026-01-30
+pubDate: 2026-01-13
 author: "Andreas Duess"
 heroImage: "/images/team-meeting.webp"
 tags: ["AI", "leadership", "experience-advantage", "implementation"]
