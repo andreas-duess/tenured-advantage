@@ -82,7 +82,7 @@ That's where experience becomes the unfair advantage.
 
 A junior professional with Claude Code can write code, design websites, analyze data, draft content.
 
-That's real. That should make anyone over 40 pause.
+That's real. That should make anyone 50+ pause.
 
 **But here's what they can't do:**
 
@@ -216,7 +216,7 @@ Technical execution was never where my value came from. It came from knowing wha
 
 That hasn't changed. It's become more valuable.
 
-If you're over 40 and worried that AI is making your expertise obsolete, you're asking the wrong question.
+If you're 50+ and worried that AI is making your expertise obsolete, you're asking the wrong question.
 
 The question isn't "Can AI do what I do?"
 

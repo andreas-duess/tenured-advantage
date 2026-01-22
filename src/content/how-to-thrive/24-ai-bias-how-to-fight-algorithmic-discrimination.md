@@ -72,7 +72,7 @@ I've seen systems recommend lower salaries for candidates with career gaps, for 
 
 The AI isn't being discriminatory. It's being trained on discriminatory data and producing discriminatory outputs. That's not a bug. That's how machine learning works.
 
-## How AI Bias Affects Professionals Over 40
+## How AI Bias Affects Professionals 50+
 
 Let me be specific about how this affects us—not theoretically, but in practice.
 

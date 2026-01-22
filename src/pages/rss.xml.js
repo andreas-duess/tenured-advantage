@@ -9,7 +9,7 @@ export async function GET(context) {
 
   return rss({
     title: 'Tenured Advantage',
-    description: 'AI insights for experienced professionals who want to amplify their competitive edge. Practical strategies from Andreas Duess.',
+    description: 'AI insights for leaders 50+ who want to amplify their competitive edge. Practical strategies from Andreas Duess.',
     site: context.site,
     items: sortedPosts.map((post) => ({
       title: post.data.title,
