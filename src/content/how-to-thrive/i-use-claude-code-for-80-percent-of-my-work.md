@@ -15,7 +15,7 @@ Not 80% of my coding work - I'm not a developer, (at least not in the traditiona
 
 This morning, it helped me organize 27 emails and draft responses to the ones that needed my input. I used it to research the data behind the first draft of what you're reading right now. It analyzed expense data from three different sources and flagged the anomalies I needed to look at.
 
-I used it to design and build tenuredadvantage.com, the site you're on. It helped me draft client proposals for [6 Seeds](https://6seedsconsulting.com). It created content calendars for [Ask Ditto](https://askditto.io). It organized research for an upcoming keynote in Atlanta. It helped me prep for my next Ivey Business School lecture.
+I used it to design and build fiftyplus.co, the site you're on. It helped me draft client proposals for [6 Seeds](https://6seedsconsulting.com). It created content calendars for [Ask Ditto](https://askditto.io). It organized research for an upcoming keynote in Atlanta. It helped me prep for my next Ivey Business School lecture.
 
 This month, it's managing my content publishing workflow, tracking business metrics across multiple ventures, researching data for thought leadership content, and automating operational tasks that used to eat hours.
 

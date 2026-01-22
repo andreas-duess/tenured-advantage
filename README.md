@@ -1,4 +1,4 @@
-# Tenured Advantage
+# 50+
 
 A blazingly fast static blog built with Astro, focused on AI insights for experienced professionals.
 
@@ -217,4 +217,4 @@ Copyright © 2026 Andreas Duess. All rights reserved.
 
 ## Support
 
-For questions or issues, contact: andreas@tenuredadvantage.com
+For questions or issues, contact: andreas@fiftyplus.co

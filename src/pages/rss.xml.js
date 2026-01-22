@@ -8,7 +8,7 @@ export async function GET(context) {
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return rss({
-    title: 'Tenured Advantage',
+    title: '50+',
     description: 'AI insights for leaders 50+ who want to amplify their competitive edge. Practical strategies from Andreas Duess.',
     site: context.site,
     items: sortedPosts.map((post) => ({

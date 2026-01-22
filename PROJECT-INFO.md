@@ -1,4 +1,4 @@
-# Tenured Advantage - Project Information
+# 50+ - Project Information
 
 **Location**: `/Users/andreasduess/Developer/experience-advantage/`
 
@@ -99,7 +99,7 @@ Individual article drafts:
 npm run deploy
 ```
 
-**Site URL**: https://tenuredadvantage.com
+**Site URL**: https://fiftyplus.co
 
 ## Technical Details
 
@@ -127,4 +127,4 @@ npm run deploy
 
 **Last Updated**: January 16, 2026
 **Dev Server**: http://localhost:4321/
-**Production**: https://tenuredadvantage.com
+**Production**: https://fiftyplus.co

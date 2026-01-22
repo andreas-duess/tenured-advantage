@@ -1,4 +1,4 @@
-# Tenured Advantage - Project Context
+# 50+ - Project Context
 
 ## Overview
 Personal website and thought leadership platform for Andreas Duess, focused on helping experienced professionals (50+) leverage AI to amplify their competitive advantage.
