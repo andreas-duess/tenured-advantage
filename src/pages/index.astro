@@ -140,17 +140,6 @@ const posts = (await getCollection('how-to-thrive'))
           <p class="cta-lead">
             Let me send you 5 practical lessons over 5 days, then weekly insights to keep you ahead. AI strategies I learned the hard way and am using daily in my own business.
           </p>
-          <div class="cta-features">
-            <div class="feature">
-              <p><strong>One lesson per day</strong><br>Practical, actionable, no fluff</p>
-            </div>
-            <div class="feature">
-              <p><strong>Apply immediately</strong><br>Use what you learn the same day</p>
-            </div>
-            <div class="feature">
-              <p><strong>Built for experience</strong><br>Assumes you know your domain</p>
-            </div>
-          </div>
           <div class="cta-signup">
             <EmailCapture
               headline="Get the Free 5-Day Course"
@@ -586,29 +575,6 @@ const posts = (await getCollection('how-to-thrive'))
     color: #e5e7eb;
   }
 
-  .cta-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-  }
-
-  .feature {
-    text-align: center;
-  }
-
-  .feature p {
-    color: #e5e7eb;
-    margin: 0;
-    line-height: 1.6;
-  }
-
-  .feature strong {
-    color: #ffffff;
-    display: block;
-    margin-bottom: 0.25rem;
-  }
-
   .cta-signup {
     max-width: 600px;
     margin: 0 auto;
@@ -935,11 +901,6 @@ const posts = (await getCollection('how-to-thrive'))
 
     .cta-lead {
       font-size: 1.1rem;
-    }
-
-    .cta-features {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
     }
 
     .posts-grid {
