@@ -3,7 +3,6 @@ title: "AI Cybersecurity for Professionals: Protecting Your Work (and Career) in
 description: "I've watched too many professionals learn about AI security risks the hard way. After three decades in business, I know the most expensive lessons are the ones you learn from your own mistakes. Let me help you avoid them."
 pubDate: 2026-01-18
 author: "Andreas Duess"
-heroImage: "/images/lab-technicians.webp"
 tags: ["AI security", "cybersecurity", "data privacy", "AI safety"]
 draft: false
 ---

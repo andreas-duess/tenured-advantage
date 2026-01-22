@@ -3,7 +3,6 @@ title: "Why AI Needs Deep Experience"
 description: "Saanya Ojha's analysis of Claude Cowork reveals a truth most missed: the scarce resource is no longer code, it's conviction. Long exposure to a domain is now the unfair advantage."
 pubDate: 2026-01-21
 author: "Andreas Duess"
-heroImage: "/images/claude-code.webp"
 tags: ["AI", "experience", "career advantage", "judgment", "competitive advantage"]
 draft: false
 ---

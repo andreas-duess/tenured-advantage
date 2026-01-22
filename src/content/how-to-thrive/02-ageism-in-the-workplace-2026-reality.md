@@ -3,7 +3,6 @@ title: "Ageism in the Workplace: The 2026 Reality (And How to Fight Back)"
 description: "The data on workplace ageism is sobering. But the narrative is incomplete. Here's what's really happening—and the strategic response that actually works."
 pubDate: 2026-01-18
 author: "Andreas Duess"
-heroImage: "/images/man-boxing-workout.webp"
 altText: "Professional in boxing workout demonstrating resilience and fighting spirit"
 tags: ["ageism", "workplace discrimination", "career strategy", "age discrimination"]
 draft: false

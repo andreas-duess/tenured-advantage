@@ -3,7 +3,6 @@ title: "Your First 100 Days with AI: A Letter to Experienced Professionals"
 description: "From one experienced professional to another: what I wish I'd known when I started my AI journey. The fears, breakthroughs, and practical wisdom from the first 100 days."
 pubDate: 2026-01-18
 author: "Andreas Duess"
-heroImage: "/images/two-female-executives.webp"
 altText: "Professional working confidently with laptop - beginning the AI journey"
 tags: ["getting-started", "first-100-days", "ai-journey", "practical-advice"]
 draft: false

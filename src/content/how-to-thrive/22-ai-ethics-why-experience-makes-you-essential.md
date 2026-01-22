@@ -3,7 +3,6 @@ title: "AI Ethics for Professionals: Why Your Experience Makes You Essential"
 description: "Tech companies can't solve AI ethics alone. After 30 years in business, I've learned that ethical AI implementation requires something technology alone can't provide: judgment born from experience."
 pubDate: 2026-01-18
 author: "Andreas Duess"
-heroImage: "/images/diverse_business_leaders.webp"
 tags: ["AI ethics", "ethical AI", "responsible AI", "professional development"]
 draft: false
 ---

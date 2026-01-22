@@ -3,7 +3,6 @@ title: "The Future of Work Favors the Experienced"
 description: "Remote work, AI tools, and the shift to outcomes over hours are dismantling the structures that disadvantaged experienced professionals. The future workplace is being built for you."
 pubDate: 2026-01-18
 author: "Andreas Duess"
-heroImage: "/images/male-executives-at-airport.webp"
 altText: "Business executives strategizing - experienced leadership in the future of work"
 tags: ["future-of-work", "remote-work", "ai-workplace", "experience-advantage"]
 draft: false

@@ -3,7 +3,6 @@ title: "Why Experience Is Your Unfair Advantage with AI"
 description: "While younger professionals chase AI trends, experienced professionals have something far more valuable: context, judgment, and the wisdom to know what questions to ask."
 pubDate: 2026-01-16
 author: "Andreas Duess"
-heroImage: "/images/experience.webp"
 tags: ["AI Strategy", "Experience Advantage", "Career Longevity"]
 draft: false
 ---

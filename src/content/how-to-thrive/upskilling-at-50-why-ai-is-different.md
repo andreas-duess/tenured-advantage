@@ -3,7 +3,6 @@ title: "Upskilling at 50: Why AI Is Different (Start Now)"
 description: "Every decade has its must-learn skill. AI isn't just another technology wave—it's fundamentally different. Here's why waiting will cost you more than you think."
 pubDate: 2026-01-18
 author: "Andreas Duess"
-heroImage: "/images/executives-london-cab.webp"
 altText: "Business executives in professional conversation inside a London black cab"
 tags: ["upskilling", "ai-learning", "career-resilience"]
 draft: false

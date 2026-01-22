@@ -3,7 +3,6 @@ title: "The AI Glossary You Actually Need"
 description: "Cut through the jargon. Here are the 15 AI terms experienced professionals need to understand—explained in plain English, without the BS."
 pubDate: 2026-01-18
 author: "Andreas Duess"
-heroImage: "/images/meeting-room.webp"
 tags: ["AI literacy", "practical AI", "professional development"]
 draft: false
 ---

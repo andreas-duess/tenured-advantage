@@ -26,11 +26,6 @@ const posts = (await getCollection('how-to-thrive'))
       <div class="posts-grid">
         {posts.map(post => (
           <article class="post-card">
-            {post.data.heroImage && (
-              <a href={`/how-to-thrive/${post.slug}`}>
-                <img src={post.data.heroImage} alt={post.data.title} class="post-image" />
-              </a>
-            )}
             <div class="post-content">
               <h2>
                 <a href={`/how-to-thrive/${post.slug}`}>{post.data.title}</a>
@@ -104,13 +99,6 @@ const posts = (await getCollection('how-to-thrive'))
   .post-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  }
-
-  .post-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
   }
 
   .post-content {

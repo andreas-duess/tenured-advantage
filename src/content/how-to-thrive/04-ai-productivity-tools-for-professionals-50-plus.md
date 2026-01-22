@@ -3,7 +3,6 @@ title: "AI Productivity Tools Every Professional 50+ Should Know"
 description: "Stop drowning in busy work. These AI tools handle research, writing, analysis, and coordination—freeing you to focus on strategic work only you can do."
 pubDate: 2026-01-16
 author: "Andreas Duess"
-heroImage: "/images/business-man-aii-presentation.webp"
 tags: ["AI tools", "productivity", "AI for professionals", "work efficiency"]
 draft: false
 ---
