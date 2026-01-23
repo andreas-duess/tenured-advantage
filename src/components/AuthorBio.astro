@@ -7,10 +7,10 @@ const { author = 'Andreas Duess' } = Astro.props;
 ---
 
 <div class="author-bio">
-  <img src="/Andreas-Headshot.jpg" alt={author} class="author-image" />
+  <img src="/Andreas-Headshot.jpg" alt={author} class="author-image" width="500" height="500" />
   <div class="author-content">
     <div class="author-header">
-      <h3>About {author}</h3>
+      <h2>About {author}</h2>
       <span class="author-title">CEO, Speaker, Educator</span>
     </div>
     <p class="author-description">
@@ -55,7 +55,7 @@ const { author = 'Andreas Duess' } = Astro.props;
     margin-bottom: 0.75rem;
   }
 
-  .author-header h3 {
+  .author-header h2 {
     margin: 0;
     font-size: 1.5rem;
     color: #1a1a1a;
@@ -107,7 +107,7 @@ const { author = 'Andreas Duess' } = Astro.props;
       height: 100px;
     }
 
-    .author-header h3 {
+    .author-header h2 {
       font-size: 1.25rem;
     }
   }

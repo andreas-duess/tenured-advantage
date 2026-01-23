@@ -16,6 +16,9 @@ const posts = (await getCollection('how-to-thrive'))
   title="AI Strategy for Leaders 50+ | 50+"
   description="Turn decades of experience into your AI advantage. Practical strategies for leaders 50+ who need results, not experiments."
 >
+  <!-- Preload critical images for LCP optimization -->
+  <link rel="preload" as="image" href="/images/laptop-work.webp" fetchpriority="high" slot="head" />
+
   <!-- Structured Data - FAQPage Schema -->
   <script type="application/ld+json">
     {
@@ -76,7 +79,7 @@ const posts = (await getCollection('how-to-thrive'))
 
   <Header />
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="hero">
       <div class="hero-parallax-bg" data-parallax-bg></div>
       <div class="hero-overlay"></div>
@@ -107,7 +110,7 @@ const posts = (await getCollection('how-to-thrive'))
           <p class="value-prop-closing">AI doesn't replace expertise. It multiplies it.</p>
         </div>
         <div class="value-prop-image">
-          <img src="/images/laptop-work.webp" alt="Professional working with AI" />
+          <img src="/images/laptop-work.webp" alt="Professional working with AI" width="1000" height="667" fetchpriority="high" />
         </div>
       </div>
     </section>
@@ -115,7 +118,7 @@ const posts = (await getCollection('how-to-thrive'))
     <section class="amplify-section">
       <div class="amplify-grid">
         <div class="amplify-image">
-          <img src="/images/male-exec.webp" alt="Executive leader" />
+          <img src="/images/male-exec.webp" alt="Executive leader" width="1000" height="666" />
         </div>
         <div class="amplify-content">
           <h2>Amplify, Don't Start Over</h2>
@@ -174,7 +177,7 @@ const posts = (await getCollection('how-to-thrive'))
     <section class="about-section">
       <div class="about-grid">
         <div class="about-image">
-          <img src="/images/andreas-colour.webp" alt="Andreas Duess" />
+          <img src="/images/andreas-colour.webp" alt="Andreas Duess" width="1025" height="1025" />
         </div>
         <div class="about-content">
           <h2>About Andreas Duess</h2>

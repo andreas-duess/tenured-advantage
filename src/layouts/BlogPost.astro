@@ -112,7 +112,7 @@ if (relatedPosts.length < 2) {
 
   <Header />
 
-  <main class="article-container">
+  <main class="article-container" id="main-content" tabindex="-1">
     <article class="blog-post">
       <header class="article-header">
         <h1>{title}</h1>
@@ -163,7 +163,7 @@ if (relatedPosts.length < 2) {
 
     <aside class="sidebar">
       <div class="sidebar-widget">
-        <h3>About Andreas</h3>
+        <h2>About Andreas</h2>
         <p>
           Andreas Duess helps leaders 50+ leverage AI to amplify their competitive advantage.
           With 30+ years bridging tech and traditional industries, he's the CEO of 6 Seeds and teaches AI strategy at Ivey Business School.
@@ -171,7 +171,7 @@ if (relatedPosts.length < 2) {
       </div>
 
       <div class="sidebar-widget">
-        <h3>Popular Topics</h3>
+        <h2>Popular Topics</h2>
         <ul>
           <li><a href="/how-to-thrive/tag/ai-strategy">AI Strategy</a></li>
           <li><a href="/how-to-thrive/tag/career-longevity">Career Longevity</a></li>
@@ -345,7 +345,7 @@ if (relatedPosts.length < 2) {
     margin-bottom: 2rem;
   }
 
-  .sidebar-widget h3 {
+  .sidebar-widget h2 {
     margin-top: 0;
     font-size: 1.1rem;
   }

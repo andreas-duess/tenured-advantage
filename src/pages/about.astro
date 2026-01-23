@@ -9,9 +9,12 @@ import EmailCapture from '../components/EmailCapture.astro';
   title="About Andreas Duess"
   description="I help leaders 50+ use AI to amplify their competitive advantage. Former CEO, Ivey Business School lecturer, and advisor helping leaders navigate AI transformation."
 >
+  <!-- Preload critical image for LCP optimization -->
+  <link rel="preload" as="image" href="/Andreas-Headshot.jpg" fetchpriority="high" slot="head" />
+
   <Header />
 
-  <main class="about-page">
+  <main class="about-page" id="main-content" tabindex="-1">
     <div class="container">
       <article class="about-content">
         <header class="page-header">
@@ -145,7 +148,7 @@ import EmailCapture from '../components/EmailCapture.astro';
 
           <aside class="sidebar">
             <div class="profile-card">
-              <img src="/Andreas-Headshot.jpg" alt="Andreas Duess" class="profile-image" />
+              <img src="/Andreas-Headshot.jpg" alt="Andreas Duess" class="profile-image" width="500" height="500" fetchpriority="high" />
               <div class="profile-info">
                 <h3>Andreas Duess</h3>
                 <p class="connect">
