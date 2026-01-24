@@ -1,0 +1,295 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Contact Andreas Duess | 50+"
+  description="Get in touch with Andreas Duess. Book a consultation or reach out via email to discuss AI strategy for leaders 50+."
+>
+  <Header />
+
+  <main class="contact-page" id="main-content" tabindex="-1">
+    <div class="container">
+      <header class="page-header">
+        <h1>Let's Connect</h1>
+        <p class="subtitle">Have questions about AI strategy? Looking to collaborate? I'd love to hear from you.</p>
+      </header>
+
+      <div class="contact-content">
+        <section class="contact-methods">
+          <div class="contact-card">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m2 7 10 7 10-7"/>
+              </svg>
+            </div>
+            <h2>Email</h2>
+            <p>For inquiries, collaborations, or just to say hello.</p>
+            <a href="mailto:andreas@fiftyplus.co" class="contact-link">andreas@fiftyplus.co</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </div>
+            <h2>LinkedIn</h2>
+            <p>Connect professionally and follow my latest insights.</p>
+            <a href="https://linkedin.com/in/andreasduess" target="_blank" rel="noopener" class="contact-link">Connect on LinkedIn</a>
+          </div>
+        </section>
+
+        <!-- Calendly Widget Section - Ready for integration -->
+        <section class="booking-section">
+          <h2>Schedule a Conversation</h2>
+          <p class="booking-intro">
+            Interested in discussing AI strategy for your organization? Book a time that works for you.
+          </p>
+
+          <!-- Cal.com booking widget -->
+          <div class="cal-widget-container">
+            <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-20-minutes"></div>
+          </div>
+
+          <script type="text/javascript" is:inline>
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+            Cal("init", "20-minutes", {origin:"https://app.cal.com"});
+
+            Cal.ns["20-minutes"]("inline", {
+              elementOrSelector:"#my-cal-inline-20-minutes",
+              config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+              calLink: "andreas-duess/20-minutes",
+            });
+
+            Cal.ns["20-minutes"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+          </script>
+        </section>
+
+        <section class="contact-info">
+          <h2>What I Can Help With</h2>
+          <div class="help-grid">
+            <div class="help-item">
+              <h3>Speaking Engagements</h3>
+              <p>Keynotes and workshops on AI strategy for experienced professionals and organizations.</p>
+            </div>
+            <div class="help-item">
+              <h3>Advisory & Consulting</h3>
+              <p>Strategic guidance on AI implementation for businesses and professional development.</p>
+            </div>
+            <div class="help-item">
+              <h3>Media & Press</h3>
+              <p>Interviews, guest articles, and expert commentary on AI and professional development.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .contact-page {
+    padding: 3rem 0;
+    min-height: 70vh;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .page-header h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .contact-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .contact-card {
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .contact-card:hover {
+    border-color: #3e4956;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+  }
+
+  .icon {
+    color: #f97316;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-card h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+
+  .contact-card p {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .contact-link {
+    display: inline-block;
+    color: #3e4956;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #3e4956;
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+
+  .contact-link:hover {
+    background: #3e4956;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(62, 73, 86, 0.3);
+  }
+
+  .booking-section {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .booking-section h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #1f2937;
+    text-align: center;
+  }
+
+  .booking-intro {
+    text-align: center;
+    color: #4b5563;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .cal-widget-container {
+    background: #ffffff;
+    border-radius: 8px;
+    min-height: 700px;
+    overflow: hidden;
+  }
+
+  .contact-info {
+    margin-bottom: 3rem;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #1f2937;
+    text-align: center;
+  }
+
+  .help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+  }
+
+  .help-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+  }
+
+  .help-item h3 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: #1f2937;
+  }
+
+  .help-item p {
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 1rem;
+    }
+
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+    }
+
+    .contact-methods {
+      grid-template-columns: 1fr;
+    }
+
+    .booking-section {
+      padding: 2rem 1.5rem;
+    }
+
+    .booking-section h2 {
+      font-size: 1.5rem;
+    }
+
+    .help-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cal-widget-container {
+      min-height: 600px;
+    }
+  }
+</style>
