@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -42,6 +43,11 @@ const { Content } = await tip.render();
 
         <div class="article-content">
           <Content />
+        </div>
+
+        <!-- Email Capture - Bottom of Article -->
+        <div class="bottom-cta">
+          <EmailCapture />
         </div>
 
         <footer class="article-footer">
@@ -161,6 +167,12 @@ const { Content } = await tip.render();
   .article-content :global(a) {
     color: #3e4956;
     font-weight: 600;
+  }
+
+  .bottom-cta {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid #e5e7eb;
   }
 
   .article-footer {
