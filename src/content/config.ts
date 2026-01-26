@@ -14,4 +14,19 @@ const howToThrive = defineCollection({
   }),
 });
 
-export const collections = { 'how-to-thrive': howToThrive };
+const podcastWisdom = defineCollection({
+  type: 'content',
+  schema: z.object({
+    id: z.string(),
+    guest: z.string(),
+    episode: z.string(),
+    youtubeUrl: z.string().url(),
+    categories: z.array(z.string()),
+    featured: z.boolean().default(false),
+  }),
+});
+
+export const collections = {
+  'how-to-thrive': howToThrive,
+  'podcast-wisdom': podcastWisdom,
+};

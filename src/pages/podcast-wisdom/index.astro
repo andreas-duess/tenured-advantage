@@ -1,0 +1,301 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const tips = (await getCollection('podcast-wisdom'))
+  .sort((a, b) => {
+    if (a.data.featured && !b.data.featured) return -1;
+    if (!a.data.featured && b.data.featured) return 1;
+    return a.data.guest.localeCompare(b.data.guest);
+  });
+---
+
+<BaseLayout
+  title="Podcast Wisdom"
+  description="Curated insights from Lenny's Podcast transcripts showing how decades of experience create strategic advantages in leadership and AI adoption."
+>
+  <Header />
+
+  <main class="blog-listing" id="main-content" tabindex="-1">
+    <div class="container">
+      <header class="page-header">
+        <h1>Podcast Wisdom</h1>
+        <p><a href="https://www.lennyspodcast.com/" target="_blank" rel="noopener noreferrer">Lenny's Podcast</a> features in-depth conversations with founders, product leaders, and operators. Lenny Rachitsky made all 303 transcripts publicly available—I downloaded them and used AI to analyze them for insights that become more valuable with experience.</p>
+        <p>These are tips that resonate differently when you've lived through multiple business cycles, technology shifts, and organizational transformations.</p>
+        <p class="listen-cta">
+          <a href="https://www.lennysnewsletter.com/podcast" target="_blank" rel="noopener noreferrer">Listen to Lenny's Podcast →</a>
+        </p>
+      </header>
+
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-category="all">All</button>
+        <button class="filter-tab" data-category="leadership">Leadership</button>
+        <button class="filter-tab" data-category="experience-advantage">Experience Advantage</button>
+        <button class="filter-tab" data-category="strategic-thinking">Strategic Thinking</button>
+        <button class="filter-tab" data-category="career-longevity">Career Longevity</button>
+        <button class="filter-tab" data-category="ai-adoption">AI Adoption</button>
+        <button class="filter-tab" data-category="personal-growth">Personal Growth</button>
+        <button class="filter-tab" data-category="wisdom-transfer">Wisdom Transfer</button>
+      </div>
+
+      <div class="posts-grid">
+        {tips.map(tip => {
+          // Extract first paragraph after ## Tip heading
+          const bodyText = tip.body.replace(/^##\s+Tip\s*\n+/, '').trim();
+          const firstParagraph = bodyText.split('\n\n')[0];
+          const excerpt = firstParagraph.slice(0, 200);
+
+          return (
+            <article class="post-card" data-categories={tip.data.categories.join(',')}>
+              <div class="post-content">
+                <h2>
+                  <a href={`/podcast-wisdom/${tip.data.id}`}>{tip.data.guest}</a>
+                </h2>
+                <div class="post-meta">
+                  <span class="author">{tip.data.episode}</span>
+                </div>
+                {tip.data.categories.length > 0 && (
+                  <div class="tags">
+                    {tip.data.categories.map(tag => (
+                      <span class="tag">{tag.replace(/-/g, ' ')}</span>
+                    ))}
+                  </div>
+                )}
+                <p>{excerpt}...</p>
+                <a href={`/podcast-wisdom/${tip.data.id}`} class="read-more">Read more →</a>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.post-card');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const category = tab.dataset.category;
+
+        // Update active tab
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        // Filter cards
+        cards.forEach(card => {
+          const cardCategories = card.dataset.categories.split(',');
+
+          if (category === 'all' || cardCategories.includes(category)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .blog-listing {
+    min-height: 60vh;
+    padding: 3rem 0;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .page-header h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-header p {
+    font-size: 1.25rem;
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto 1rem;
+    line-height: 1.7;
+  }
+
+  .page-header p:last-child {
+    margin-bottom: 0;
+  }
+
+  .page-header a {
+    color: #3e4956;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .page-header a:hover {
+    text-decoration: underline;
+  }
+
+  .listen-cta {
+    margin-top: 1.5rem;
+  }
+
+  .listen-cta a {
+    color: #3e4956;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .listen-cta a:hover {
+    text-decoration: underline;
+  }
+
+  .filter-tabs {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .filter-tab {
+    padding: 0.625rem 1.25rem;
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4b5563;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .filter-tab:hover {
+    border-color: #3e4956;
+    color: #1f2937;
+  }
+
+  .filter-tab.active {
+    background: #3e4956;
+    border-color: #3e4956;
+    color: #ffffff;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .post-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-content {
+    padding: 1.5rem;
+  }
+
+  .post-content h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .post-content h2 a {
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+
+  .post-content h2 a:hover {
+    color: #3e4956;
+  }
+
+  .post-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .tag {
+    background: #f3f4f6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #4b5563;
+  }
+
+  .post-content p {
+    color: #4b5563;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .read-more {
+    color: #3e4956;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 1rem;
+    }
+
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .page-header p {
+      font-size: 1.1rem;
+    }
+
+    .filter-tabs {
+      gap: 0.5rem;
+    }
+
+    .filter-tab {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+    }
+
+    .posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

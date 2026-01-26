@@ -1,0 +1,235 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const tips = await getCollection('podcast-wisdom');
+  return tips.map(tip => ({
+    params: { id: tip.data.id },
+    props: { tip },
+  }));
+}
+
+const { tip } = Astro.props;
+const { Content } = await tip.render();
+---
+
+<BaseLayout
+  title={`${tip.data.guest} - Podcast Wisdom | 50+`}
+  description={`Insight from ${tip.data.guest} on ${tip.data.episode}, reframed for experienced leaders 50+.`}
+>
+  <Header />
+
+  <main id="main-content" tabindex="-1">
+    <article class="tip-article">
+      <div class="container">
+        <header class="article-header">
+          <a href="/podcast-wisdom" class="back-link">← Back to all insights</a>
+
+          <div class="guest-info">
+            {tip.data.featured && <span class="featured-badge">Featured</span>}
+            <h1>{tip.data.guest}</h1>
+            <p class="episode-title">{tip.data.episode}</p>
+            <div class="categories">
+              {tip.data.categories.map(cat => (
+                <span class="category-tag">{cat.replace(/-/g, ' ')}</span>
+              ))}
+            </div>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <Content />
+        </div>
+
+        <footer class="article-footer">
+          <a
+            href={tip.data.youtubeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="watch-btn"
+          >
+            Watch the full episode on YouTube →
+          </a>
+          <a href="/podcast-wisdom" class="back-link-footer">← Back to all insights</a>
+        </footer>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .tip-article {
+    padding: 3rem 0 5rem;
+  }
+
+  .back-link {
+    display: inline-block;
+    color: #3e4956;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: #1f2937;
+  }
+
+  .article-header {
+    margin-bottom: 3rem;
+  }
+
+  .guest-info {
+    border-bottom: 2px solid #f97316;
+    padding-bottom: 2rem;
+  }
+
+  .featured-badge {
+    display: inline-block;
+    background: #f97316;
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .guest-info h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+    line-height: 1.2;
+  }
+
+  .episode-title {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  .categories {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .category-tag {
+    background: #f3f4f6;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-transform: capitalize;
+  }
+
+  .article-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #1f2937;
+  }
+
+  .article-content :global(h2) {
+    font-size: 1.75rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+  }
+
+  .article-content :global(p) {
+    margin-bottom: 1.5rem;
+    white-space: pre-wrap;
+  }
+
+  .article-content :global(p + p) {
+    margin-top: 1.5rem;
+  }
+
+  .article-content :global(a) {
+    color: #3e4956;
+    font-weight: 600;
+  }
+
+  .article-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .watch-btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    background: #3e4956;
+    color: #ffffff;
+    border: 2px solid #3e4956;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .watch-btn:hover {
+    background: #2d3748;
+    border-color: #2d3748;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(62, 73, 86, 0.3);
+  }
+
+  .back-link-footer {
+    color: #6b7280;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .back-link-footer:hover {
+    color: #1f2937;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 1rem;
+    }
+
+    .tip-article {
+      padding: 2rem 0 3rem;
+    }
+
+    .guest-info h1 {
+      font-size: 2rem;
+    }
+
+    .episode-title {
+      font-size: 1.1rem;
+    }
+
+    .article-content {
+      font-size: 1rem;
+    }
+
+    .article-content :global(h2) {
+      font-size: 1.5rem;
+    }
+
+    .article-footer {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+  }
+</style>
