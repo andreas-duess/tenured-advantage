@@ -4,7 +4,7 @@ guest: Ada Chen Rekhi
 episode: "Feeling stuck? Here's how to know when it's time to leave your job"
 youtubeUrl: https://www.youtube.com/watch?v=l-T8sNRcWQk
 categories: [leadership, wisdom-transfer, experience-advantage]
-featured: true
+featured: false
 ---
 
 ## Tip

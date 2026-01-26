@@ -4,7 +4,7 @@ guest: Chip Conley
 episode: "Chip Conley on finding success in your 50s, the modern elder, and how to build a great culture"
 youtubeUrl: https://www.youtube.com/watch?v=4LjddcccYIo
 categories: [leadership, experience-advantage, personal-growth]
-featured: false
+featured: true
 ---
 
 ## Tip
